@@ -16,26 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "My research projects.",
+        },{id: "nav-portfolio",
+          title: "portfolio",
+          description: "My research projects and work.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-photography",
-          title: "photography",
-          description: "A collection of my photography work.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/photography/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "My academic CV.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/portfolio/";
           },
         },{id: "nav-blog",
           title: "blog",
@@ -43,6 +29,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
+          },
+        },{id: "nav-photography",
+          title: "photography",
+          description: "A collection of my photography work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/photography/";
           },
         },{id: "news-new-paper-on-probing-retinal-activities-via-transparent-graphene-electrodes-published-in-acs-applied-bio-materials",
           title: 'New paper on probing retinal activities via transparent graphene electrodes published in ACS...',
