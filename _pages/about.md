@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. in Electrical Engineering and Computer Science, <a href='https://www.vanderbilt.edu/'>Vanderbilt University</a>
+subtitle:
 
 profile:
   align: left
@@ -32,7 +32,7 @@ I received my Ph.D. in Electrical Engineering and Computer Science from [Vanderb
 My research lies at the intersection of **nanomaterials**, **bioelectronics**, and **optoelectronics**.
 
 <div class="row mt-4">
-  <div class="col-sm-6 col-md-3 mb-3">
+  <div class="col-sm-6 mb-3">
     <a href="/publications/" class="card-link">
       <div class="card hoverable h-100">
         <div class="card-body text-center">
@@ -43,7 +43,7 @@ My research lies at the intersection of **nanomaterials**, **bioelectronics**, a
       </div>
     </a>
   </div>
-  <div class="col-sm-6 col-md-3 mb-3">
+  <div class="col-sm-6 mb-3">
     <a href="/portfolio/" class="card-link">
       <div class="card hoverable h-100">
         <div class="card-body text-center">
@@ -54,7 +54,7 @@ My research lies at the intersection of **nanomaterials**, **bioelectronics**, a
       </div>
     </a>
   </div>
-  <div class="col-sm-6 col-md-3 mb-3">
+  <div class="col-sm-6 mb-3">
     <a href="/blog/" class="card-link">
       <div class="card hoverable h-100">
         <div class="card-body text-center">
@@ -65,7 +65,7 @@ My research lies at the intersection of **nanomaterials**, **bioelectronics**, a
       </div>
     </a>
   </div>
-  <div class="col-sm-6 col-md-3 mb-3">
+  <div class="col-sm-6 mb-3">
     <a href="/photography/" class="card-link">
       <div class="card hoverable h-100">
         <div class="card-body text-center">
