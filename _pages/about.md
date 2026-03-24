@@ -5,7 +5,7 @@ permalink: /
 subtitle: Ph.D. in Electrical Engineering and Computer Science, <a href='https://www.vanderbilt.edu/'>Vanderbilt University</a>
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: true
   more_info: >
@@ -13,9 +13,10 @@ profile:
     <p><i class="fas fa-envelope"></i> <a href="mailto:xiaosizhang0517@gmail.com">Email</a></p>
     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/xiaosi-zhang-97948a201/">LinkedIn</a></p>
     <p><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=N0-TpGcAAAAJ&hl=en">Google Scholar</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/xiaosi0517">GitHub</a></p>
 
 selected_papers: false
-social: true
+social: false
 
 announcements:
   enabled: true
