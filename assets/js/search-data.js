@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "news-new-paper-on-probing-retinal-activities-via-transparent-graphene-electrodes-published-in-acs-applied-bio-materials",
+        },{id: "post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server",
+        
+          title: "Running a Modern Python CV Stack on a 15-Year-Old Linux Server",
+        
+        description: "Lessons from deploying NumPy, SciPy, and OpenCV in an offline legacy engineering environment",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/legacy-linux-python-deployment/";
+          
+        },
+      },{id: "news-new-paper-on-probing-retinal-activities-via-transparent-graphene-electrodes-published-in-acs-applied-bio-materials",
           title: 'New paper on probing retinal activities via transparent graphene electrodes published in ACS...',
           description: "",
           section: "News",},{id: "news-our-paper-on-graphene-based-microfluidic-perforated-microelectrode-arrays-published-in-lab-on-a-chip",
