@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://xiaosi0517.github.io/sitemap.xml
