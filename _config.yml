@@ -23,16 +23,16 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Xiaosi Zhang"
-  pronouns         : # example: "she/her"
-  bio              : "TODO: Add your short bio here"
-  location         : "TODO: Your Location"
-  employer         : "TODO: Your University/Company"
+  pronouns         :
+  bio              : "Ph.D. in ECE. Graphene, microelectrodes, retinal electrophysiology."
+  location         : "Nashville, TN"
+  employer         : "Vanderbilt University"
   uri              :
-  email            : "TODO@example.org"
+  email            : # TODO: add your email
 
   # Academic websites
   arxiv            :
-  googlescholar    : # "https://scholar.google.com/citations?user=YOUR_ID"
+  googlescholar    : # TODO: add your Google Scholar URL, e.g. "https://scholar.google.com/citations?user=YOUR_ID"
   impactstory      :
   orcid            :
   semantic         :

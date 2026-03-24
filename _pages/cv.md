@@ -11,21 +11,11 @@ redirect_from:
 
 Education
 ======
-* **TODO: Degree**, TODO: University, TODO: Year
-* **TODO: Degree**, TODO: University, TODO: Year
-
-Work Experience
-======
-* **TODO: Date Range**: TODO: Position
-  * TODO: Organization
-  * TODO: Brief description of work
-
-Skills
-======
-* TODO: Skill category 1
-  * TODO: Sub-skill
-* TODO: Skill category 2
-* TODO: Skill category 3
+* **Ph.D. in Electrical Engineering and Computer Science**, Vanderbilt University, Nashville, TN, 2018 -- 2023
+  * GPA: 3.89/4.0
+  * *Hamilton Fellowship*
+* **B.Sc. in Materials Forming and Control Engineering**, Huazhong University of Science and Technology, China, 2014 -- 2018
+  * GPA: 3.89/4.0
 
 Publications
 ======
@@ -33,6 +23,13 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Service and Leadership
+Skills
 ======
-* TODO: Add your service and leadership activities
+<!-- TODO: Add your skills, for example: -->
+* Nanofabrication & cleanroom techniques
+* Graphene synthesis and characterization
+* Electrophysiology & microelectrode array design
+* Laser processing & welding
+* MATLAB, Python, data analysis
+
+<!-- TODO: Add work experience, service, etc. as needed -->
