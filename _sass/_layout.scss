@@ -43,23 +43,26 @@ body.sticky-bottom-footer {
 
 // About page sidebar layout
 .about-wrapper {
-  display: flex;
+  display: flex !important;
+  flex-direction: row !important;
   gap: 2rem;
   align-items: flex-start;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 }
 
 .about-sidebar {
   flex: 0 0 260px;
+  max-width: 260px;
   position: sticky;
   top: 80px;
 
   @media (max-width: 768px) {
     flex: none;
     width: 100%;
+    max-width: 100%;
     position: static;
   }
 
@@ -74,12 +77,29 @@ body.sticky-bottom-footer {
 
   .sidebar-photo {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
 
-    img.sidebar-avatar {
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 160px;
+      height: 160px;
+    }
+
+    picture {
+      display: block;
+      width: 160px;
+      height: 160px;
+    }
+
+    img {
       width: 160px !important;
       height: 160px !important;
+      max-width: 160px !important;
       object-fit: cover;
       margin: 0 auto;
+      display: block;
     }
   }
 
