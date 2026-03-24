@@ -1,0 +1,88 @@
+{
+  "basics": {
+    "name": "Xiaosi Zhang",
+    "label": "Researcher",
+    "image": "",
+    "email": "",
+    "summary": "Ph.D. in Electrical Engineering and Computer Science from Vanderbilt University. Research focus on graphene-based bioelectronics, microelectrode arrays, and retinal electrophysiology.",
+    "location": {
+      "city": "Nashville",
+      "countryCode": "US",
+      "region": "Tennessee"
+    },
+    "profiles": []
+  },
+  "work": [],
+  "education": [
+    {
+      "institution": "Vanderbilt University",
+      "location": "Nashville, TN, USA",
+      "url": "https://www.vanderbilt.edu/",
+      "area": "Electrical Engineering and Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2018-08-01",
+      "endDate": "2023-05-01",
+      "score": "3.89/4.0",
+      "courses": []
+    },
+    {
+      "institution": "Huazhong University of Science and Technology",
+      "location": "Wuhan, China",
+      "url": "https://www.hust.edu.cn/",
+      "area": "Materials Forming and Control Engineering",
+      "studyType": "B.Sc.",
+      "startDate": "2014-09-01",
+      "endDate": "2018-06-01",
+      "score": "3.89/4.0",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Hamilton Fellowship",
+      "date": "2018-08-01",
+      "awarder": "Vanderbilt University",
+      "summary": "Fellowship awarded to support doctoral studies."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Nanofabrication",
+      "keywords": ["Graphene synthesis", "Cleanroom techniques", "Microelectrode fabrication"]
+    },
+    {
+      "name": "Characterization",
+      "keywords": ["Electrophysiology", "Optoelectronics", "Laser processing"]
+    },
+    {
+      "name": "Programming",
+      "keywords": ["Python", "MATLAB", "Data analysis"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Bioelectronics",
+      "keywords": ["Graphene electrodes", "Retinal interfacing", "Neural recording"]
+    },
+    {
+      "name": "Nanomaterials",
+      "keywords": ["2D materials", "Optoelectronics"]
+    },
+    {
+      "name": "Photography",
+      "keywords": []
+    }
+  ]
+}
