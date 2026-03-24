@@ -4,7 +4,7 @@ title: photography
 permalink: /photography/
 description: A collection of my photography work.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 *Coming soon -- photos will be added here.*
