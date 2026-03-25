@@ -27,9 +27,17 @@ latest_posts:
   enabled: false
 ---
 
-I received my Ph.D. in Electrical Engineering and Computer Science from [Vanderbilt University](https://www.vanderbilt.edu/) in 2023, supported by the *Hamilton Fellowship* (GPA: 3.89/4.0). I obtained my B.Sc. in Materials Forming and Control Engineering from [Huazhong University of Science and Technology](https://www.hust.edu.cn/) in 2018 (GPA: 3.89/4.0).
+I am a Senior Software Systems Engineer with a Ph.D. in Electrical Engineering and Computer Science from [Vanderbilt University](https://www.vanderbilt.edu/), and a Bachelor's degree (Honors) from [Huazhong University of Science and Technology](https://www.hust.edu.cn/).
 
-My research lies at the intersection of **nanomaterials**, **bioelectronics**, and **optoelectronics**.
+My work lies at the intersection of **semiconductor systems**, **computer vision**, and **machine learning**, where I design algorithms and systems to enable reliable decision-making under structured ambiguity.
+
+I specialize in developing geometry-aware and vision-inspired algorithms for structured data, particularly in scenarios where scale, noise, and repetition make traditional approaches fragile. This includes:
+
+- Registration and alignment in highly repetitive layouts
+- Defect detection in noisy and structured environments
+- Robust matching and candidate selection under ambiguity
+
+I am particularly interested in building systems that combine domain knowledge with modern ML and computer vision techniques, translating complex real-world constraints into scalable, reliable, and production-ready solutions.
 
 <div class="row mt-4">
   <div class="col-sm-6 mb-3">
