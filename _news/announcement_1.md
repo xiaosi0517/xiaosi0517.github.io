@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-05-01
+date: 2026-03-24
 inline: true
 related_posts: false
 ---
 
-Graduated with a Ph.D. in Electrical Engineering and Computer Science from Vanderbilt University!
+Published my first blog post: [Running a Modern Python CV Stack on a 15-Year-Old Linux Server](/blog/2026/legacy-linux-python-deployment/) -- lessons from deploying NumPy, SciPy, and OpenCV in an offline legacy engineering environment.
