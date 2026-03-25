@@ -19,22 +19,14 @@
       "url": "https://www.pdf.com/",
       "startDate": "2023-01-01",
       "endDate": "",
-      "summary": "1D Registration Location Discovery – Geometry-based Pattern Search (Mar 2026 – Present)",
+      "summary": "",
       "highlights": [
+        "**1D Registration Location Discovery – Geometry-based Pattern Search (Mar 2026 – Present)**",
         "Designed a **geometry-aware search system** to identify robust **registration locations** from **semiconductor layouts** using **edge-based spatial analysis**.",
         "Built efficient **candidate generation and filtering** mechanisms with **spatial indexing** and **rule-based isolation constraints** for structured layout patterns.",
         "Developed **scoring strategies** to evaluate **pattern quality** and **robustness** under highly noisy conditions.",
-        "Designed and integrated an **end-to-end pipeline** from **layout parsing** to **candidate search** and result generation, deployed on **HPC environments (SGE clusters)** for scalable large-scale layout processing."
-      ]
-    },
-    {
-      "name": "PDF Solutions",
-      "position": "Senior Software Systems Engineer",
-      "url": "https://www.pdf.com/",
-      "startDate": "2023-01-01",
-      "endDate": "",
-      "summary": "Image-based Registration & Template Matching Pipeline (Oct 2025 – Mar 2026)",
-      "highlights": [
+        "Designed and integrated an **end-to-end pipeline** from **layout parsing** to **candidate search** and result generation, deployed on **HPC environments (SGE clusters)** for scalable large-scale layout processing.",
+        "**Image-based Registration & Template Matching Pipeline (Oct 2025 – Mar 2026)**",
         "Designed an **end-to-end image-based pipeline** for **registration location selection**, including **layout rasterization**, **candidate sampling**, **template matching**, and **quality scoring**.",
         "Applied **computer vision techniques** (**template matching** and **correlation analysis**) to identify robust patterns under **noise**, **ambiguity**, and **repetitive structures**.",
         "Developed **data-driven quality metrics** (e.g., **peak ratio**, **feature coverage**) for **pattern ranking** and selection.",
