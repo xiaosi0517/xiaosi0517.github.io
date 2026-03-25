@@ -47,7 +47,7 @@ to build **end-to-end solutions** for problems such as **registration**, **defec
         <div class="card-body text-center">
           <h3><i class="fas fa-book"></i></h3>
           <h5 class="card-title">Publications</h5>
-          <p class="card-text small">Peer-reviewed papers in graphene bioelectronics, microfluidics, and laser processing.</p>
+          <p class="card-text small">Peer-reviewed papers.</p>
         </div>
       </div>
     </a>
@@ -58,7 +58,7 @@ to build **end-to-end solutions** for problems such as **registration**, **defec
         <div class="card-body text-center">
           <h3><i class="fas fa-microscope"></i></h3>
           <h5 class="card-title">Portfolio</h5>
-          <p class="card-text small">Research projects and hands-on work in nanomaterials and bioelectronics.</p>
+          <p class="card-text small">Research projects.</p>
         </div>
       </div>
     </a>
