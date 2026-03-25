@@ -55,14 +55,8 @@ ninja.data = [{
             window.location.href = "/blog/2026/legacy-linux-python-deployment/";
           
         },
-      },{id: "news-new-paper-on-probing-retinal-activities-via-transparent-graphene-electrodes-published-in-acs-applied-bio-materials",
-          title: 'New paper on probing retinal activities via transparent graphene electrodes published in ACS...',
-          description: "",
-          section: "News",},{id: "news-our-paper-on-graphene-based-microfluidic-perforated-microelectrode-arrays-published-in-lab-on-a-chip",
-          title: 'Our paper on graphene-based microfluidic perforated microelectrode arrays published in Lab on a...',
-          description: "",
-          section: "News",},{id: "news-graduated-with-a-ph-d-in-electrical-engineering-and-computer-science-from-vanderbilt-university",
-          title: 'Graduated with a Ph.D. in Electrical Engineering and Computer Science from Vanderbilt University!...',
+      },{id: "news-published-my-first-blog-post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server-lessons-from-deploying-numpy-scipy-and-opencv-in-an-offline-legacy-engineering-environment",
+          title: 'Published my first blog post: Running a Modern Python CV Stack on a...',
           description: "",
           section: "News",},{id: "projects-graphene-retinal-electrodes",
           title: 'Graphene Retinal Electrodes',
