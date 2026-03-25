@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Xiaosi Zhang",
-    "label": "Researcher",
+    "label": "Senior Software Systems Engineer",
     "image": "",
     "email": "",
-    "summary": "Ph.D. in Electrical Engineering and Computer Science from Vanderbilt University. Research focus on graphene-based bioelectronics, microelectrode arrays, and retinal electrophysiology.",
+    "summary": "Senior Software Systems Engineer with a Ph.D. from Vanderbilt University, working at the intersection of semiconductor systems, computer vision, and machine learning. Designs scalable end-to-end solutions for registration, defect detection, and robust matching in structured environments.",
     "location": {
       "city": "San Jose",
       "countryCode": "US",
@@ -45,20 +45,7 @@
       "summary": "Fellowship awarded to support doctoral studies."
     }
   ],
-  "skills": [
-    {
-      "name": "Nanofabrication",
-      "keywords": ["Graphene synthesis", "Cleanroom techniques", "Microelectrode fabrication"]
-    },
-    {
-      "name": "Characterization",
-      "keywords": ["Electrophysiology", "Optoelectronics", "Laser processing"]
-    },
-    {
-      "name": "Programming",
-      "keywords": ["Python", "MATLAB", "Data analysis"]
-    }
-  ],
+  "skills": [],
   "languages": [
     {
       "language": "Chinese",
@@ -71,18 +58,5 @@
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Bioelectronics",
-      "keywords": ["Graphene electrodes", "Retinal interfacing", "Neural recording"]
-    },
-    {
-      "name": "Nanomaterials",
-      "keywords": ["2D materials", "Optoelectronics"]
-    },
-    {
-      "name": "Photography",
-      "keywords": []
-    }
-  ]
+  "interests": []
 }
