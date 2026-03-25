@@ -27,21 +27,18 @@ latest_posts:
   enabled: false
 ---
 
-I am a **Senior Software Systems Engineer** with a Ph.D. in **Electrical Engineering and Computer Science** from [Vanderbilt University](https://www.vanderbilt.edu/), and a Bachelor's degree (Honors) from [Huazhong University of Science and Technology](https://www.hust.edu.cn/).
+*I design systems that make reliable decisions under ambiguity.*
 
-My work lies at the intersection of **semiconductor systems**, **computer vision**, and **machine learning**, where I design **scalable and robust algorithms** and systems to enable reliable decision-making under **structured ambiguity**.
+I am a **Senior Software Systems Engineer** with a Ph.D. from [Vanderbilt University](https://www.vanderbilt.edu/), working at the intersection of **semiconductor systems**, **computer vision**, and **machine learning**.
 
-I specialize in developing **geometry-aware** and **vision-inspired algorithms** for structured data, particularly in scenarios where scale, noise, and repetition make traditional approaches fragile. This includes:
+My work combines:
 
-- **Registration and alignment** in highly repetitive layouts
-- **Defect detection** in noisy and structured environments
-- **Robust matching and candidate selection** under ambiguity
+- **Vision and geometry-aware algorithms** for structured layout data
+- **Efficient search and optimization strategies** under constraints
+- **Scalable system design** for large-scale processing
+- **Deployment in HPC and cloud environments** (e.g., **SGE**, **AWS**)
 
-Beyond algorithm design, I focus on building **efficient search strategies** and **scalable pipelines**, enabling these methods to operate reliably at large scale.
-
-I also have hands-on experience deploying systems in **Linux-based HPC** and **cloud environments** (e.g., **SGE clusters** and **AWS**), bridging algorithmic innovation with production-ready infrastructure.
-
-I am particularly interested in designing **end-to-end systems** that combine **domain knowledge** with modern **ML and computer vision** techniques, translating complex real-world constraints into **scalable, reliable, and production-grade solutions**.
+to build **end-to-end solutions** for problems such as **registration**, **defect detection**, and **robust matching** in highly structured and noisy environments.
 
 <div class="row mt-4">
   <div class="col-sm-6 mb-3">
