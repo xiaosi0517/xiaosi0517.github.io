@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server",
+        },{id: "post-beyond-rendering-rasterization-topology-and-the-bridge-to-search",
+        
+          title: "Beyond Rendering: Rasterization, Topology, and the Bridge to Search",
+        
+        description: "Why rasterization in engineering systems is a data transformation—not a drawing exercise—and how topology preservation enables reliable downstream search.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/rasterization-topology-bridge-to-search/";
+          
+        },
+      },{id: "post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server",
         
           title: "Running a Modern Python CV Stack on a 15-Year-Old Linux Server",
         
