@@ -75,7 +75,23 @@
             </h6>
           {% endif %}
 
-          {% if entry.highlights %}
+          {% if entry.projects %}
+            {% for project in entry.projects %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.92rem; margin-top: 0.8rem; margin-bottom: 0.3rem;">
+                <strong>{{ project.name }}</strong>
+                {% if project.dates %}<em style="font-weight: normal;"> ({{ project.dates }})</em>{% endif %}
+              </h6>
+              {% if project.highlights %}
+                <ul class="items">
+                  {% for item in project.highlights %}
+                    <li>
+                      <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endfor %}
+          {% elsif entry.highlights %}
             <ul class="items">
               {% for item in entry.highlights %}
                 <li>
