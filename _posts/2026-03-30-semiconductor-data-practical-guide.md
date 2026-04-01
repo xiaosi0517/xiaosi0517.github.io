@@ -17,7 +17,7 @@ If you have worked on computer vision, you are probably used to abundance. Image
 Semiconductor manufacturing data exists in a different universe.
 
 ```mermaid
-graph LR
+graph TD
     A["Natural Images<br/>Millions of samples<br/>Free to download"] -.->|"Huge gap"| B["Semiconductor Images<br/>Hundreds to thousands<br/>Expensive to acquire"]
     
     style A fill:#d4edda,stroke:#28a745,color:#000
@@ -118,6 +118,8 @@ Key differences:
 | **Data sharing** | Public benchmarks exist (though limited by privacy) | Essentially no public datasets (trade secret) |
 | **Failure tolerance** | Misdiagnosis is serious but occurs at individual level | Process excursions can affect millions of chips simultaneously |
 
+&nbsp;
+
 The implication: semiconductor ML cannot rely on the public benchmark ecosystem that drives medical imaging research. Models must be developed and validated entirely on proprietary data, which limits reproducibility and makes transfer of research results across organizations difficult.
 
 ### vs. Remote Sensing / Satellite Imagery
@@ -134,6 +136,8 @@ Key differences:
 | **Noise model** | Atmospheric, sensor-specific but well-characterized | Multi-source (shot, charging, scan artifacts) |
 | **Geometric precision needed** | Meters | Sub-nanometer |
 
+&nbsp;
+
 ### vs. Industrial Inspection (Non-Semiconductor)
 
 General industrial visual inspection (surface defects on steel, textile quality, PCB inspection) shares the manufacturing context but differs in complexity.
@@ -146,6 +150,8 @@ General industrial visual inspection (surface defects on steel, textile quality,
 | **Tolerance** | Often percent-level | Sub-nanometer, parts-per-billion defect rates |
 | **Data pairing** | Typically one-sided (image → defect/no-defect) | Often paired (measurement ↔ design reference) |
 
+&nbsp;
+
 ---
 
 ## Adapting ML Pipelines for Semiconductor Data
@@ -153,7 +159,7 @@ General industrial visual inspection (surface defects on steel, textile quality,
 Understanding the differences is step one. Adapting your ML pipeline is step two. Here are the practical adjustments that matter most.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["Raw Semiconductor Data"] --> B["Align & Register"]
     B --> C["Safe Augmentation<br/>(flips, rotations)"]
     C --> D["Train with<br/>Regularization"]
@@ -217,6 +223,8 @@ Standard ML image metrics (L1, SSIM, PSNR) measure general image quality but do 
 | SSIM | Structural similarity | Edge Placement Error (EPE) — are the edges in the right place? |
 | PSNR | Signal-to-noise ratio | Pattern fidelity — does the shape match the design intent? |
 | IoU | Binary overlap | Contour accuracy — does the outline of each feature match? |
+
+&nbsp;
 
 Ideally, you would evaluate your model using domain-specific metrics alongside ML metrics. Extracting contours from model outputs and computing CD/EPE against the design reference provides direct process relevance. When this is not practical, SSIM and IoU are the best proxies — they are at least sensitive to structural accuracy rather than just pixel-level average error.
 
@@ -313,4 +321,3 @@ For ML engineers entering the semiconductor space: the algorithms are familiar, 
 
 ---
 
-*This post discusses general characteristics of semiconductor metrology data and broadly applicable ML engineering practices. No proprietary processes, tools, or product details are disclosed.*

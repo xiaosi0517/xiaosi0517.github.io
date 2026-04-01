@@ -132,8 +132,10 @@ These two approaches solve the *exact same problem* and produce the *same result
 | **Adding new rules** | Add code (new predicates) | Add kernels (new dilations) |
 | **Debug story** | Log coordinates, trace logic | View images, overlay masks |
 
+&nbsp;
+
 ```mermaid
-graph LR
+graph TD
     A["Same Problem:<br/>Find isolated segments"] --> B["Vector-Based"]
     A --> C["Image-Based"]
     
