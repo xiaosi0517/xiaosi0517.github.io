@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-beyond-rendering-rasterization-topology-and-the-bridge-to-search",
+        },{id: "post-vectors-vs-pixels-two-ways-to-search-for-the-same-thing-in-geometric-data",
+        
+          title: "Vectors vs. Pixels: Two Ways to Search for the Same Thing in Geometric...",
+        
+        description: "How the same spatial search problem can be solved with coordinate-based indexing or image-based morphology, and what the trade-offs teach us about algorithm design.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/vectors-vs-pixels-geometric-search/";
+          
+        },
+      },{id: "post-semiconductor-data-is-not-like-other-data-a-practical-guide-for-ml-and-data-engineers",
+        
+          title: "Semiconductor Data Is Not Like Other Data: A Practical Guide for ML and...",
+        
+        description: "What makes manufacturing metrology data unique, how it differs from the datasets most ML practitioners are used to, and what to do about it.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/semiconductor-data-practical-guide/";
+          
+        },
+      },{id: "post-beyond-rendering-rasterization-topology-and-the-bridge-to-search",
         
           title: "Beyond Rendering: Rasterization, Topology, and the Bridge to Search",
         
