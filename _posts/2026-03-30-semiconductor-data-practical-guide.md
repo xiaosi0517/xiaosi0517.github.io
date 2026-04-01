@@ -32,19 +32,9 @@ This scarcity is the single most important fact about semiconductor ML, and near
 
 If you are coming from a background in natural image processing — photographs, video, medical scans — semiconductor metrology data will surprise you in several ways.
 
-```mermaid
-graph LR
-    A["Semiconductor\nImage Properties"] --> B["Grayscale"]
-    A --> C["Intensity = Physics"]
-    A --> D["Structured Noise"]
-    A --> E["Resolution Trade-off"]
-    
-    style A fill:#4a90d9,stroke:#2c6fad,color:#fff
-    style B fill:#e8f4fd,stroke:#4a90d9,color:#000
-    style C fill:#e8f4fd,stroke:#4a90d9,color:#000
-    style D fill:#e8f4fd,stroke:#4a90d9,color:#000
-    style E fill:#e8f4fd,stroke:#4a90d9,color:#000
-```
+<div class="text-center my-3">
+  <img src="/assets/img/blog/mermaid/semi-properties.png" class="img-fluid rounded" alt="Semiconductor image properties" style="max-width:700px;">
+</div>
 
 ### Grayscale, High-Contrast, Highly Structured
 
@@ -147,19 +137,9 @@ General industrial visual inspection (surface defects on steel, textile quality,
 
 Understanding the differences is step one. Adapting your ML pipeline is step two. Here are the practical adjustments that matter most.
 
-```mermaid
-flowchart LR
-    A["Raw Data"] --> B["Align"]
-    B --> C["Augment"]
-    C --> D["Train"]
-    D --> E["Evaluate"]
-    E --> F["Deploy"]
-    F -->|Drift| D
-
-    style A fill:#f5f5f5,stroke:#333,color:#000
-    style E fill:#d4edda,stroke:#28a745,color:#000
-    style F fill:#d4edda,stroke:#28a745,color:#000
-```
+<div class="text-center my-3">
+  <img src="/assets/img/blog/mermaid/semi-pipeline.png" class="img-fluid rounded" alt="ML pipeline for semiconductor data" style="max-width:700px;">
+</div>
 
 ### 1. Embrace Small Data Strategies
 
@@ -245,33 +225,9 @@ In practice, the simplest approach — training on a mixed dataset and evaluatin
 
 When starting an ML project with semiconductor data, ask these questions in order:
 
-```mermaid
-flowchart TD
-    Start(["New Project"]) --> Q1{"Data size?"}
-    
-    Q1 -->|"< 100"| A1["Non-ML or\nheavy augmentation"]
-    Q1 -->|"100–1K"| A2["Regularization +\ncycle consistency"]
-    Q1 -->|"1K–10K"| A3["Standard DL"]
-    Q1 -->|"> 10K"| A4["Standard"]
-    
-    A1 & A2 & A3 & A4 --> Q2{"Alignment?"}
-    
-    Q2 -->|"Sub-pixel"| B1["Pixel-level losses"]
-    Q2 -->|"Few-pixel"| B2["Register first"]
-    Q2 -->|"Poor"| B3["Fix alignment first"]
-    
-    B1 & B2 & B3 --> Q3{"Production\nconditions?"}
-    
-    Q3 -->|Same| C1["Deploy"]
-    Q3 -->|Drifting| C2["Drift detection"]
-    Q3 -->|Different| C3["Domain adaptation"]
-    
-    style Start fill:#4a90d9,stroke:#2c6fad,color:#fff
-    style Q1 fill:#fff3cd,stroke:#ffc107,color:#000
-    style Q2 fill:#fff3cd,stroke:#ffc107,color:#000
-    style Q3 fill:#fff3cd,stroke:#ffc107,color:#000
-    style B3 fill:#f8d7da,stroke:#dc3545,color:#000
-```
+<div class="text-center my-3">
+  <img src="/assets/img/blog/mermaid/semi-decision.png" class="img-fluid rounded" alt="Decision framework for semiconductor ML projects" style="max-width:600px;">
+</div>
 
 **1. How much paired data do I have?**
 - < 100 pairs → Consider a non-ML approach or heavy augmentation
