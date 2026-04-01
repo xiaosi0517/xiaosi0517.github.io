@@ -17,8 +17,8 @@ If you have worked on computer vision, you are probably used to abundance. Image
 Semiconductor manufacturing data exists in a different universe.
 
 ```mermaid
-graph TD
-    A["Natural Images<br/>Millions of samples<br/>Free to download"] -.->|"Huge gap"| B["Semiconductor Images<br/>Hundreds to thousands<br/>Expensive to acquire"]
+graph LR
+    A["🟢 Natural Images\nMillions · Free"] -.->|Gap| B["🔴 Semiconductor\nHundreds · Expensive"]
     
     style A fill:#d4edda,stroke:#28a745,color:#000
     style B fill:#f8d7da,stroke:#dc3545,color:#000
@@ -39,16 +39,11 @@ This scarcity is the single most important fact about semiconductor ML, and near
 If you are coming from a background in natural image processing — photographs, video, medical scans — semiconductor metrology data will surprise you in several ways.
 
 ```mermaid
-graph TD
-    A["Semiconductor Image Properties"] --> B["Grayscale Only"]
+graph LR
+    A["Semiconductor\nImage Properties"] --> B["Grayscale"]
     A --> C["Intensity = Physics"]
     A --> D["Structured Noise"]
-    A --> E["Resolution Trade-offs"]
-    
-    B --> B1["No color channels<br/>Sharp geometric features<br/>ImageNet pretraining won't help"]
-    C --> C1["Brightness encodes material<br/>Avoid photometric augmentation"]
-    D --> D1["Shot noise, charging, scan artifacts<br/>Don't denoise blindly"]
-    E --> E1["Magnification vs. noise vs. field of view<br/>Train across imaging conditions"]
+    A --> E["Resolution Trade-off"]
     
     style A fill:#4a90d9,stroke:#2c6fad,color:#fff
     style B fill:#e8f4fd,stroke:#4a90d9,color:#000
@@ -159,14 +154,13 @@ General industrial visual inspection (surface defects on steel, textile quality,
 Understanding the differences is step one. Adapting your ML pipeline is step two. Here are the practical adjustments that matter most.
 
 ```mermaid
-flowchart TD
-    A["Raw Semiconductor Data"] --> B["Align & Register"]
-    B --> C["Safe Augmentation<br/>(flips, rotations)"]
-    C --> D["Train with<br/>Regularization"]
-    D --> E["Evaluate with<br/>Domain Metrics<br/>(CD, EPE)"]
-    E --> F["Deploy with<br/>Drift Monitoring"]
-    F -->|"Distribution shift<br/>detected"| G["Retrain"]
-    G --> D
+flowchart LR
+    A["Raw Data"] --> B["Align"]
+    B --> C["Augment"]
+    C --> D["Train"]
+    D --> E["Evaluate"]
+    E --> F["Deploy"]
+    F -->|Drift| D
 
     style A fill:#f5f5f5,stroke:#333,color:#000
     style E fill:#d4edda,stroke:#28a745,color:#000
@@ -259,29 +253,24 @@ When starting an ML project with semiconductor data, ask these questions in orde
 
 ```mermaid
 flowchart TD
-    Start(["New Semiconductor ML Project"]) --> Q1{"How much<br/>paired data?"}
+    Start(["New Project"]) --> Q1{"Data size?"}
     
-    Q1 -->|"< 100"| A1["Consider non-ML approach<br/>or heavy augmentation"]
-    Q1 -->|"100 – 1,000"| A2["Heavy regularization<br/>Cycle consistency"]
-    Q1 -->|"1,000 – 10,000"| A3["Standard DL +<br/>careful augmentation"]
-    Q1 -->|"> 10,000"| A4["Standard practices"]
+    Q1 -->|"< 100"| A1["Non-ML or\nheavy augmentation"]
+    Q1 -->|"100–1K"| A2["Regularization +\ncycle consistency"]
+    Q1 -->|"1K–10K"| A3["Standard DL"]
+    Q1 -->|"> 10K"| A4["Standard"]
     
-    A1 --> Q2{"Alignment<br/>quality?"}
-    A2 --> Q2
-    A3 --> Q2
-    A4 --> Q2
+    A1 & A2 & A3 & A4 --> Q2{"Alignment?"}
     
-    Q2 -->|"Sub-pixel"| B1["Ready for<br/>pixel-level losses"]
-    Q2 -->|"Few-pixel error"| B2["Register first<br/>(template matching)"]
-    Q2 -->|"Significant"| B3["⚠️ Fix alignment<br/>before anything else"]
+    Q2 -->|"Sub-pixel"| B1["Pixel-level losses"]
+    Q2 -->|"Few-pixel"| B2["Register first"]
+    Q2 -->|"Poor"| B3["Fix alignment first"]
     
-    B1 --> Q3{"Production imaging<br/>conditions?"}
-    B2 --> Q3
-    B3 --> Q3
+    B1 & B2 & B3 --> Q3{"Production\nconditions?"}
     
-    Q3 -->|"Same as training"| C1["Standard deploy"]
-    Q3 -->|"Drifting"| C2["Drift detection +<br/>periodic retraining"]
-    Q3 -->|"Different tools"| C3["Domain adaptation /<br/>tool-specific fine-tuning"]
+    Q3 -->|Same| C1["Deploy"]
+    Q3 -->|Drifting| C2["Drift detection"]
+    Q3 -->|Different| C3["Domain adaptation"]
     
     style Start fill:#4a90d9,stroke:#2c6fad,color:#fff
     style Q1 fill:#fff3cd,stroke:#ffc107,color:#000

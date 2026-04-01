@@ -254,6 +254,20 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Mermaid diagrams — responsive on all screen sizes
+pre.mermaid {
+  text-align: center;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 1rem 0 !important;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 // diff2html
 
 .d2h-diff-table {
