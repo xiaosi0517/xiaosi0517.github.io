@@ -6,8 +6,6 @@ description: How the same spatial search problem can be solved with coordinate-b
 tags: [algorithms, computer-vision, geometry, search]
 categories: [engineering]
 giscus_comments: false
-mermaid:
-  enabled: true
 toc:
   beginning: true
 ---
@@ -134,22 +132,9 @@ These two approaches solve the *exact same problem* and produce the *same result
 
 &nbsp;
 
-```mermaid
-graph TD
-    A["Same Problem:<br/>Find isolated segments"] --> B["Vector-Based"]
-    A --> C["Image-Based"]
-    
-    B --> B1["Sorted arrays<br/>Binary search<br/>O(M log N)"]
-    C --> C1["Rasterize<br/>Dilate & subtract<br/>O(image_size)"]
-    
-    B1 --> D["Same Results"]
-    C1 --> D
-    
-    style A fill:#4a90d9,stroke:#2c6fad,color:#fff
-    style B fill:#d4edda,stroke:#28a745,color:#000
-    style C fill:#e8f4fd,stroke:#4a90d9,color:#000
-    style D fill:#fff3cd,stroke:#ffc107,color:#000
-```
+<div class="text-center my-3">
+  <img src="/assets/img/blog/mermaid/vec-vs-pix.png" class="img-fluid rounded" alt="Vector-based vs image-based search comparison" style="max-width:500px;">
+</div>
 
 This duality — **structured index search vs. dense field operations** — shows up everywhere in computer science:
 

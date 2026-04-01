@@ -6,8 +6,6 @@ description: What makes manufacturing metrology data unique, how it differs from
 tags: [machine-learning, semiconductor, computer-vision, data-engineering]
 categories: [engineering]
 giscus_comments: false
-mermaid:
-  enabled: true
 toc:
   beginning: true
 ---
@@ -16,13 +14,9 @@ If you have worked on computer vision, you are probably used to abundance. Image
 
 Semiconductor manufacturing data exists in a different universe.
 
-```mermaid
-graph LR
-    A["🟢 Natural Images\nMillions · Free"] -.->|Gap| B["🔴 Semiconductor\nHundreds · Expensive"]
-    
-    style A fill:#d4edda,stroke:#28a745,color:#000
-    style B fill:#f8d7da,stroke:#dc3545,color:#000
-```
+<div class="text-center my-3">
+  <img src="/assets/img/blog/mermaid/semi-gap.png" class="img-fluid rounded" alt="Natural images vs semiconductor images data gap" style="max-width:600px;">
+</div>
 
 ## The Dataset You Cannot Download
 
