@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-vectors-vs-pixels-two-ways-to-search-for-the-same-thing-in-geometric-data",
+        },{id: "post-gans-for-image-to-image-translation-an-engineering-perspective",
+        
+          title: "GANs for Image-to-Image Translation: An Engineering Perspective",
+        
+        description: "What it actually takes to build a production GAN system — from architecture choices to training stability to deployment feedback loops.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/gans-image-to-image-translation-engineering/";
+          
+        },
+      },{id: "post-vectors-vs-pixels-two-ways-to-search-for-the-same-thing-in-geometric-data",
         
           title: "Vectors vs. Pixels: Two Ways to Search for the Same Thing in Geometric...",
         
