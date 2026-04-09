@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "SEM ↔ Layout GAN — MLE Interview Prep"
+title: "SEM ↔ Layout GAN — MLE Technical Notes"
 date: 2026-04-09 12:00:01
-description: Structured narrative, mock Q&A, and deep-dive follow-ups for SEM/layout GAN interviews — personal notes (unlisted).
+description: Structured narrative, mock Q&A, and deep-dive follow-ups for SEM/layout GAN systems — personal notes (unlisted).
 tags: []
 categories: []
 private: true
@@ -13,14 +13,14 @@ toc:
   beginning: true
 ---
 
-Structured explanation, mock Q&A, and deep-dive follow-ups for interviews. Aligned with `DESIGN.md` and the codebase.
+Structured explanation, mock Q&A, and deep-dive follow-ups for technical review. Aligned with `DESIGN.md` and the codebase.
 
 ---
 
 ## Table of contents
 
 1. [Part 1 — Structured explanation (5–10 min narrative)](#part-1--structured-explanation-510-min-narrative)
-2. [Part 2 — Mock interview questions](#part-2--mock-interview-questions)
+2. [Part 2 — Mock practice questions](#part-2--mock-practice-questions)
 3. [Part 3 — Deep dive questions (MLE level)](#part-3--deep-dive-questions-mle-level)
 
 ---
@@ -182,7 +182,7 @@ Structured explanation, mock Q&A, and deep-dive follow-ups for interviews. Align
 
 ---
 
-# Part 2 — Mock interview questions
+# Part 2 — Mock practice questions
 
 ### Q1: Walk me through how data flows from a raw SEM image to a model prediction.
 
@@ -298,7 +298,7 @@ Structured explanation, mock Q&A, and deep-dive follow-ups for interviews. Align
 
 ### D13: What was the hardest engineering problem?
 
-**A:** A strong interview answer: alignment and data QC — misregistered pairs cap achievable quality regardless of model capacity; debugging “the model” before verifying pairs wastes time.
+**A:** A strong answer: alignment and data QC — misregistered pairs cap achievable quality regardless of model capacity; debugging “the model” before verifying pairs wastes time.
 
 ### D14: What is the biggest trade-off you made?
 
