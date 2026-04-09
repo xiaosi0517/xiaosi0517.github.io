@@ -3,7 +3,7 @@ layout: post
 title: "GANs for Image-to-Image Translation: An Engineering Perspective"
 date: 2026-04-01
 description: What it actually takes to build a production GAN system — from architecture choices to training stability to deployment feedback loops.
-tags: [machine-learning, computer-vision, deep-learning, GAN]
+tags: [blog-index, machine-learning, computer-vision, deep-learning, GAN]
 categories: [engineering]
 giscus_comments: false
 toc:
@@ -71,7 +71,7 @@ PatchGAN takes a different approach. It outputs a **spatial map** where each val
 Global discriminator:                 PatchGAN discriminator:
 ┌─────────────────────┐              ┌─────────────────────┐
 │                     │              │  0.9   0.7   0.3    │
-│   entire image      │ → 0.6       │  0.4   0.2   0.6    │
+│   entire image      │ → 0.6        │  0.4   0.2   0.6    │
 │                     │              │  0.8   0.5   0.1    │
 └─────────────────────┘              └─────────────────────┘
    "somewhat real"                   spatially localized feedback
@@ -626,6 +626,4 @@ The most dangerous situation is optimizing purely for metrics without human vali
 
 **Respect the gap between metrics and domain requirements.** SSIM, L1, and PSNR measure image quality. Your users care about domain-specific correctness. Bridge this gap early — before you spend months optimizing for the wrong thing.
 
----
 
-*This article describes GAN engineering practices for image-to-image translation in structured domains, covering base architectures (U-Net + PatchGAN), training stabilization, self-attention for long-range consistency, feature matching for multi-scale perceptual quality, and the full system lifecycle from training to deployment. The techniques and trade-offs discussed are broadly applicable to any paired image translation task where both realism and structural correctness are required.*

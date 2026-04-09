@@ -3,7 +3,7 @@ layout: post
 title: "Semiconductor Data Is Not Like Other Data: A Practical Guide for ML and Data Engineers"
 date: 2026-03-30
 description: What makes manufacturing metrology data unique, how it differs from the datasets most ML practitioners are used to, and what to do about it.
-tags: [machine-learning, semiconductor, computer-vision, data-engineering]
+tags: [blog-index, machine-learning, semiconductor, computer-vision, data-engineering]
 categories: [engineering]
 giscus_comments: false
 toc:

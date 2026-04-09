@@ -3,7 +3,7 @@ layout: post
 title: Running a Modern Python CV Stack on a 15-Year-Old Linux Server
 date: 2026-03-24
 description: Lessons from deploying NumPy, SciPy, and OpenCV in an offline legacy engineering environment
-tags: [python, linux, devops, conda]
+tags: [blog-index, python, linux, devops, conda]
 categories: [engineering]
 giscus_comments: false
 toc:

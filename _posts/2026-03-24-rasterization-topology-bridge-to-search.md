@@ -3,7 +3,7 @@ layout: post
 title: "Beyond Rendering: Rasterization, Topology, and the Bridge to Search"
 date: 2026-03-24 12:00:00
 description: Why rasterization in engineering systems is a data transformation—not a drawing exercise—and how topology preservation enables reliable downstream search.
-tags: [computer-vision, algorithms, rasterization, semiconductor]
+tags: [blog-index, computer-vision, algorithms, rasterization, semiconductor]
 categories: [engineering]
 giscus_comments: false
 toc:

@@ -7,6 +7,7 @@ nav_order: 4
 pagination:
   enabled: true
   collection: posts
+  tag: blog-index
   permalink: /page/:num/
   per_page: 5
   sort_field: date
@@ -57,6 +58,7 @@ pagination:
   {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
+{% assign featured_posts = featured_posts | where_exp: "post", "post.private != true" %}
 {% if featured_posts.size > 0 %}
 <br>
 

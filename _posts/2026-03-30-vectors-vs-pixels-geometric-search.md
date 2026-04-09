@@ -3,7 +3,7 @@ layout: post
 title: "Vectors vs. Pixels: Two Ways to Search for the Same Thing in Geometric Data"
 date: 2026-03-30
 description: How the same spatial search problem can be solved with coordinate-based indexing or image-based morphology, and what the trade-offs teach us about algorithm design.
-tags: [algorithms, computer-vision, geometry, search]
+tags: [blog-index, algorithms, computer-vision, geometry, search]
 categories: [engineering]
 giscus_comments: false
 toc:
