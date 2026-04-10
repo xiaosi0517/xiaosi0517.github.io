@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Transformers & Vision Transformers: A Deep Technical Guide"
+permalink: /blog/2026/transformers-vit-deep-dive/
 date: 2026-04-09 12:00:00
 description: Deep-dive notes on attention, ViT, engineering trade-offs, and common pitfalls — for personal study (not listed on the main blog index).
 tags: []
