@@ -44,7 +44,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-gans-for-image-to-image-translation-an-engineering-perspective",
+        },{id: "post-the-state-of-ai-a-deep-structural-analysis-2024-2026",
+        
+          title: "The State of AI: A Deep Structural Analysis (2024–2026)",
+        
+        description: "Macro view of the AI stack, agents, data, deployment, and industry dynamics — long-form analysis.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ai-industry-analysis-2024-2026/";
+          
+        },
+      },{id: "post-sem-layout-gan-mle-technical-notes",
+        
+          title: "SEM ↔ Layout GAN — MLE Technical Notes",
+        
+        description: "Structured narrative, mock Q&amp;A, and deep-dive follow-ups for SEM/layout GAN systems.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/sem-layout-gan-mle-notes/";
+          
+        },
+      },{id: "post-transformers-amp-vision-transformers-a-deep-technical-guide",
+        
+          title: "Transformers &amp; Vision Transformers: A Deep Technical Guide",
+        
+        description: "Deep-dive notes on attention, ViT, engineering trade-offs, and common pitfalls.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/transformers-vit-deep-dive/";
+          
+        },
+      },{id: "post-gans-for-image-to-image-translation-an-engineering-perspective",
         
           title: "GANs for Image-to-Image Translation: An Engineering Perspective",
         
