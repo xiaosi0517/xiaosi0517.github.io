@@ -3,7 +3,7 @@ layout: post
 title: "The Market Is Not Reacting to Reality"
 date: 2026-04-10
 categories: [Investing, AI]
-tags: [market, ai, investing, cycles]
+tags: [blog-index,market, ai, investing, cycles]
 ---
 
 I’ve started to notice something unsettling.
