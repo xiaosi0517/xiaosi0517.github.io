@@ -4,6 +4,9 @@ title: "The Market Is Not Reacting to Reality"
 date: 2026-04-10
 categories: [Investing, AI]
 tags: [blog-index,market, ai, investing, cycles]
+giscus_comments: false
+toc:
+  beginning: true
 ---
 
 I’ve started to notice something unsettling.
