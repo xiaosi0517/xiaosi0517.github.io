@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-the-state-of-ai-a-deep-structural-analysis-2024-2026",
+        },{id: "post-the-market-is-not-reacting-to-reality",
+        
+          title: "The Market Is Not Reacting to Reality",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/market-expectations-vs-reality/";
+          
+        },
+      },{id: "post-the-state-of-ai-a-deep-structural-analysis-2024-2026",
         
           title: "The State of AI: A Deep Structural Analysis (2024–2026)",
         
