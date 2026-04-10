@@ -13,6 +13,3 @@ assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
 vendor
-
-# Local-only draft: do not commit or push (see user preference)
-_posts/2026-04-09-ai-industry-analysis-2024-2026.md

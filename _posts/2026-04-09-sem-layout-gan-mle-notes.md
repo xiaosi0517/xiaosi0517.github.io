@@ -3,12 +3,9 @@ layout: post
 title: "SEM ↔ Layout GAN — MLE Technical Notes"
 permalink: /blog/2026/sem-layout-gan-mle-notes/
 date: 2026-04-09 12:00:01
-description: Structured narrative, mock Q&A, and deep-dive follow-ups for SEM/layout GAN systems — personal notes (unlisted).
-tags: []
-categories: []
-private: true
-feed: false
-sitemap: false
+description: Structured narrative, mock Q&A, and deep-dive follow-ups for SEM/layout GAN systems.
+tags: [blog-index, machine-learning, GAN, semiconductor, computer-vision]
+categories: [engineering]
 giscus_comments: false
 toc:
   beginning: true
