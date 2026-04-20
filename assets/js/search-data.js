@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-the-market-is-not-reacting-to-reality",
+        },{id: "post-from-model-to-system-how-memory-rag-tools-agents-and-mcp-fit-together",
+        
+          title: "From Model to System: How Memory, RAG, Tools, Agents, and MCP Fit Together...",
+        
+        description: "A system-level explanation of how LLM components—memory, RAG, tools, agents, skills, MCP, and the production harness—connect into one coherent architecture.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/llm-system-architecture-from-model-to-production/";
+          
+        },
+      },{id: "post-the-market-is-not-reacting-to-reality",
         
           title: "The Market Is Not Reacting to Reality",
         
