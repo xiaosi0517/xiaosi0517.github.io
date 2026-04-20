@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-photography",
+          title: "Photography",
+          description: "A collection of my photography work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/photography/";
+          },
         },{id: "post-from-model-to-system-how-memory-rag-tools-agents-and-mcp-fit-together",
         
           title: "From Model to System: How Memory, RAG, Tools, Agents, and MCP Fit Together...",
