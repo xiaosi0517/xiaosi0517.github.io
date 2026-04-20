@@ -1,14 +1,17 @@
 ---
-layout: single
-title: "Photography"
+layout: page
 permalink: /photography/
-author_profile: true
+title: Photography
+description: A collection of my photography work.
+nav: true
+nav_order: 5
 ---
 
 {% include figure.liquid 
   loading="eager" 
   path="assets/img/photography/california-ocean.png" 
   class="img-fluid rounded z-depth-1"
+  style="max-width:800px; margin:40px auto; display:block;"
 %}
 
 <p style="margin-top:8px; font-size:14px; color:#666;">
