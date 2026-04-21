@@ -67,6 +67,11 @@
   transition: transform 0.35s ease;
 }
 
+.photo-wallpaper {
+  object-fit: contain !important;
+  background: #f8f9fa !important;
+}
+
 .photo-frame:hover .photo-image {
   transform: scale(1.02);
 }

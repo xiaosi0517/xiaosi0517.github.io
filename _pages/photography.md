@@ -14,7 +14,7 @@ nav_order: 5
         <img
           src="/assets/img/photography/{{ photo.image }}"
           alt="{{ photo.location }}"
-          class="photo-image"
+          class="photo-image{% if photo.type == 'wallpaper' %} photo-wallpaper{% endif %}"
         >
       </div>
 
