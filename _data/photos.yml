@@ -1,3 +1,13 @@
+- image: california-ocean.png
+  location: California coast
+  date: May 2025
+  caption: took this for summer colors
+
+- image: california-ocean-4wallpaper.png
+  location: California coast
+  date: May 2025
+  caption: took this for summer colors
+
 - image: stanford-wisteria.png
   location: stanford
   date: June 2024
@@ -8,12 +18,3 @@
   date: June 2024
   caption: a quiet afternoon for purple colors
 
-- image: under-the-leaves.png
-  location: California coast
-  date: May 2025
-  caption: took this for summer colors
-
-- image: california-ocean-4wallpaper.png
-  location: California coast
-  date: May 2025
-  caption: took this for summer colors

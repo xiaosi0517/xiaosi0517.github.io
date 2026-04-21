@@ -51,17 +51,20 @@
 }
 
 .photo-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;   /* 控制统一比例（关键） */
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  background: #fff;
+  background: #eee;
 }
 
 .photo-image {
-  display: block;
   width: 100%;
-  height: auto;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  height: 100%;
+  object-fit: cover;   /* 🔥 关键：自动裁剪填满 */
+  display: block;
+  transition: transform 0.35s ease;
 }
 
 .photo-frame:hover .photo-image {
