@@ -37,3 +37,55 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-frame {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.photo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.photo-frame:hover .photo-image {
+  transform: scale(1.02);
+}
+
+.photo-frame:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.photo-caption {
+  margin-top: 0.75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.photo-date {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

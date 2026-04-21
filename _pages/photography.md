@@ -7,15 +7,21 @@ nav: true
 nav_order: 5
 ---
 
-<div style="max-width: 560px; margin: 2rem auto 0 auto;">
-  <img
-    src="/assets/img/photography/california-ocean.png"
-    alt="California coast"
-    style="width: 100%; height: auto; border-radius: 8px; display: block;"
-  >
+<div class="photo-gallery">
+  {% for photo in site.data.photos %}
+    <div class="photo-card">
+      <div class="photo-frame">
+        <img
+          src="/assets/img/photography/{{ photo.image }}"
+          alt="{{ photo.location }}"
+          class="photo-image"
+        >
+      </div>
 
-  <p style="margin-top: 12px; font-size: 14px; color: #666; line-height: 1.5;">
-    California coast <span style="color:#aaa;">· May 2025</span><br>
-    took this for the colors
-  </p>
+      <p class="photo-caption">
+        {{ photo.location }} <span class="photo-date">· {{ photo.date }}</span><br>
+        {{ photo.caption }}
+      </p>
+    </div>
+  {% endfor %}
 </div>
