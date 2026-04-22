@@ -27,8 +27,8 @@
           "highlights": [
             "Built a GAN-based image-to-image translation system (U-Net + PatchGAN) for **SEM ↔ layout simulation domain translation** in semiconductor inspection.",
             "Designed multi-objective loss functions (adversarial + L1 + cycle consistency) to preserve **geometric fidelity** while improving visual realism.",
-            "Deployed the model as a RESTful API (FastAPI) for scalable inference and integration into inspection and analysis workflows.",
-            "Designed a closed-loop ML system with drift detection and human-in-the-loop feedback, enabling continuous improvement via automated fine-tuning and evaluation gating."
+            "Deployed the model as a **RESTful API (FastAPI)** for scalable inference and integration into inspection and analysis workflows.",
+            "Designed a **closed-loop ML system** with drift detection and **human-in-the-loop feedback**, enabling continuous improvement via automated fine-tuning and evaluation gating."
           ]
         },
         {
@@ -45,9 +45,10 @@
           "name": "Image-based Registration & Template Matching Pipeline",
           "dates": "Apr 2025 – Sep 2025",
           "highlights": [
-            "Designed an end-to-end image-based pipeline for **registration location selection**, including layout rasterization, candidate sampling, template matching, and quality scoring.",
+            "Designed an end-to-end image-based pipeline for **registration location selection** in **huge chip design layout(~mm^2)**, including layout rasterization, candidate sampling, template matching, and quality scoring.",
             "Applied **computer vision** techniques (template matching and correlation analysis) to identify robust patterns under noise, ambiguity, and repetitive structures.",
             "Developed data-driven quality metrics (e.g., peak ratio, feature coverage) for pattern ranking and selection.",
+            "Improved pipeline efficiency by **~3×** while significantly enhancing **code maintainability and debuggability** by replacing **legacy black-box EDA** components with transparent, modular implementations.",
             "Built scalable and production-ready workflows, deployed across **HPC (SGE)** and **AWS** with debugging and validation pipelines for large-scale semiconductor inspection."
           ]
         },
