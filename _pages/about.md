@@ -31,12 +31,14 @@ latest_posts:
 
 I am a **Senior Software Systems Engineer** with a Ph.D. from [Vanderbilt University](https://www.vanderbilt.edu/), working at the intersection of **semiconductor systems**, **computer vision**, and **machine learning**.
 
-My work combines:
+My work focuses on identifying high-impact problems and delivering end-to-end solutions, including:
 
-- **Vision and geometry-aware algorithms** for structured layout data
-- **Efficient search and optimization strategies** under constraints
-- **Scalable system design** for large-scale processing
-- **Deployment in HPC and cloud environments** (e.g., **SGE**, **AWS**)
+- **Problem identification** and solution design in complex, real-world systems  
+- **Algorithm development and optimization** for accuracy, efficiency, and robustness  
+- **Scalable system design** for large-scale data processing 
+- Resource-efficient computing to **reduce cost and improve performance** at scale
+- Deployment in **HPC and cloud environments** (e.g., SGE, AWS)  
+- Cross-functional **collaboration** and **on-site technical support** for customer-facing issues  
 
 to build **end-to-end solutions** for problems such as **registration**, **defect detection**, and **robust matching** in highly structured and noisy environments.
 
