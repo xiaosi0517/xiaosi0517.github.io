@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-from-model-to-system-how-memory-rag-tools-agents-and-mcp-fit-together",
+        },{id: "post-scalability-in-ml-systems-intuitive-guide",
+        
+          title: "Scalability in ML Systems - Intuitive Guide",
+        
+        description: "Understanding scalability through concrete examples and practical techniques",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/scalability-guide/";
+          
+        },
+      },{id: "post-from-model-to-system-how-memory-rag-tools-agents-and-mcp-fit-together",
         
           title: "From Model to System: How Memory, RAG, Tools, Agents, and MCP Fit Together...",
         
