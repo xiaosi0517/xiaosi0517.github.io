@@ -44,15 +44,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/";
           },
-        },{id: "post-scalability-in-ml-systems-intuitive-guide",
+        },{id: "post-how-to-think-about-scalability-in-system",
         
-          title: "Scalability in ML Systems - Intuitive Guide",
+          title: "How to Think about scalability in system",
         
-        description: "Understanding scalability through concrete examples and practical techniques",
+        description: "Understanding scalability through concrete examples, complexity analysis, and practical techniques. Build intuition instead of memorizing concepts.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/scalability-guide/";
+            window.location.href = "/blog/2026/scalability-in-system/";
           
         },
       },{id: "post-from-model-to-system-how-memory-rag-tools-agents-and-mcp-fit-together",
