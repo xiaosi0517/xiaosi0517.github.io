@@ -1,11 +1,16 @@
 ---
-layout: page
-title: Scalability in ML Systems - Intuitive Guide
-description: Understanding scalability through concrete examples and practical techniques
-permalink: /scalability-guide/
+layout: post
+title: "How to Think about scalability in system"
+date: 2026-04-22 12:00:00
+description: Understanding scalability through concrete examples, complexity analysis, and practical techniques. Build intuition instead of memorizing concepts.
+tags: [blog-index, system-design, ml-engineering, scalability]
+categories: [engineering]
+giscus_comments: false
+toc:
+  beginning: true
 ---
 
-# Scalability: From Theory to Practice
+# How to Think about Scalability in System
 
 ## Part 1: The Basics - What Happens When Input Doubles?
 
@@ -25,6 +30,8 @@ Imagine you have a search system. Let's see what happens when you double the inp
 - With O(N), adding 10 machines: 1 second → 0.1 second. Much better.
 
 **Why?** Because parallelization (adding machines) only helps with work you can split up. If your algorithm has fundamental inefficiency, machines can't save you.
+
+**So Scalability is about whether system cost—time, resources, and complexity—remains controllable as scale grows.**
 
 ---
 
