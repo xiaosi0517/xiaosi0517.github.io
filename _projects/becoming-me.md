@@ -8,8 +8,6 @@ permalink: /projects/becoming-me/
 tag: [AI, personal-experiment, reflection]
 ---
 
-# Becoming Me
-
 This project is an ongoing personal experiment in using AI not just to speed work, but to help a person think more independently, understand themselves more deeply, and live a richer life over time.
 
 ## What this is about
