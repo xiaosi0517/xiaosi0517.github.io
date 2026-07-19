@@ -8,7 +8,23 @@ permalink: /projects/becoming-me/
 tag: [AI, personal-experiment, reflection]
 ---
 
-This project is an ongoing personal experiment in using AI not just to speed work, but to help a person think more independently, understand themselves more deeply, and live a richer life over time.
+## Overview
+
+Most AI assistants are designed to help people work faster, find answers, and complete tasks.
+
+Becoming Me explores a different question:
+
+> Can AI help a person think more independently, understand themselves more deeply, and live a richer life over time?
+
+This project began as a personal experiment. Each day, the AI recommends meaningful experiences based on my evolving interests, including technology events, university talks, startup meetups, exhibitions, concerts, sports, books, and places to explore around the San Francisco Bay Area.
+
+But recommendation is only the starting point.
+
+I record my observations, questions, decisions, and reflections. The AI responds not simply by agreeing or giving advice, but by questioning my assumptions, identifying patterns, presenting alternative perspectives, and encouraging me to develop my own judgment.
+
+The goal is not to let AI think for me.
+
+The goal is to use AI as a partner that helps me think better.
 
 ## What this is about
 
