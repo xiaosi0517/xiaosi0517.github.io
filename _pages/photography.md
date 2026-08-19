@@ -21,6 +21,9 @@ nav_order: 5
       <p class="photo-caption">
         {{ photo.location }} <span class="photo-date">· {{ photo.date }}</span><br>
         {{ photo.caption }}
+        {% if photo.caption_en %}
+          <br><span class="photo-caption-en">{{ photo.caption_en }}</span>
+        {% endif %}
       </p>
     </div>
   {% endfor %}

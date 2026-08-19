@@ -1,3 +1,34 @@
+- image: aurora-2023-11.jpg
+  location: Aurora
+  date: "2023.11"
+
+  caption: 天空中居然还有星星！
+  caption_en: There are actually stars in the sky!
+  type: photo
+
+- image: fireworks-mountain-view-2025-07-04.jpg
+  location: Mountain View
+  date: "2025.07.04"
+
+  caption: 好好珍惜生活中的每一个时刻，珍惜身边的每一个人
+  caption_en: Cherish every moment in life, and cherish everyone around you.
+  type: photo
+
+- image: deer-yellowstone-2025-10.jpg
+  location: Yellowstone
+  date: "2025.10"
+
+  caption: great memory in yellowstone.
+  type: photo
+
+- image: double-rainbow-menlo-park-2026-01-03.jpg
+  location: Menlo Park
+  date: "2026.01.03"
+
+  caption: Menlo Park 看到的双彩虹
+  caption_en: A double rainbow seen in Menlo Park.
+  type: photo
+
 - image: california-ocean.png
   location: California coast
   date: May 2025
@@ -25,4 +56,3 @@
 
   caption: a quiet afternoon for purple colors
   type: wallpaper
-
