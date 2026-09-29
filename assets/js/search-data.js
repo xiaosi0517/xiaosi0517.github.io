@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-portfolio",
-          title: "Portfolio",
-          description: "My research projects and work.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/portfolio/";
-          },
         },{id: "nav-blog",
           title: "Blog",
           description: "",
@@ -168,12 +161,7 @@ ninja.data = [{
       },{id: "news-published-my-first-blog-post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server-lessons-from-deploying-numpy-scipy-and-opencv-in-an-offline-legacy-engineering-environment",
           title: 'Published my first blog post: Running a Modern Python CV Stack on a...',
           description: "",
-          section: "News",},{id: "projects-becoming-me",
-          title: 'Becoming Me',
-          description: "An ongoing personal experiment exploring AI as a companion for independent thinking, reflection, and growth.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/becoming-me/";
-            },},{
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
