@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 permalink: /portfolio/
 description: My research projects and work.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [research]
 horizontal: false

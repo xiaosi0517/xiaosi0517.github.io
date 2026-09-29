@@ -55,17 +55,6 @@ to build **end-to-end solutions** for problems such as **registration**, **defec
     </a>
   </div>
   <div class="col-sm-6 mb-3">
-    <a href="/portfolio/" class="card-link">
-      <div class="card hoverable h-100">
-        <div class="card-body text-center">
-          <h3><i class="fas fa-microscope"></i></h3>
-          <h5 class="card-title">Portfolio</h5>
-          <p class="card-text small">Research projects.</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-6 mb-3">
     <a href="/blog/" class="card-link">
       <div class="card hoverable h-100">
         <div class="card-body text-center">
