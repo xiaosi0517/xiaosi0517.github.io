@@ -1,3 +1,17 @@
+- image: december-2026-01.jpg
+  location: Winter hills
+  date: "2026.12"
+
+  caption: December hills in soft winter light.
+  type: photo
+
+- image: december-2026-02.jpg
+  location: Golden wetlands
+  date: "2026.12"
+
+  caption: Golden hour over the wetlands.
+  type: photo
+
 - image: aurora-2023-11.jpg
   location: Aurora
   date: "2023.11"
