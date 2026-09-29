@@ -25,10 +25,10 @@
           "name": "High-Throughput SEM Inspection & Anomaly Analysis System",
           "dates": "Aug 2026 - Sep 2026",
           "highlights": [
-            "Architected a high-throughput semiconductor inspection pipeline that analyzes thousands of SEM images within minutes, replacing hours of manual review through automated registration, anomaly detection, and failure characterization.",
-            "Developed a robust SEM-to-design registration algorithm using normalized cross-correlation, structural edge matching, and subpixel refinement, generalizing across multiple semiconductor products and varying SEM conditions.",
-            "Built a parallel image analytics pipeline using multi-threaded processing and robust statistics (Median/MAD Z-score) to automatically detect Bright, Gray, Dark, Background, and Low-Correlation mismatch signatures across large datasets.",
-            "Productized the workflow into an interactive engineering tool for SEM/design overlay, outlier visualization, and failure diagnosis, enabling engineers to rapidly identify systematic process and design mismatches."
+            "Architected a **high-throughput semiconductor inspection pipeline** that analyzes **thousands of SEM images within minutes**, replacing hours of manual review through automated registration, anomaly detection, and failure characterization.",
+            "Developed a robust **SEM-to-design registration algorithm** using normalized cross-correlation, structural edge matching, and subpixel refinement, **generalizing across multiple semiconductor products and varying SEM conditions**.",
+            "Built a **parallel image analytics pipeline** using multi-threaded processing and robust statistics (Median/MAD Z-score) to automatically detect **Bright, Gray, Dark, Background, and Low-Correlation** mismatch signatures across large datasets.",
+            "Productized the workflow into an **interactive engineering tool** for SEM/design overlay, outlier visualization, and failure diagnosis, enabling engineers to rapidly identify systematic process and design mismatches."
           ]
         },
         {
