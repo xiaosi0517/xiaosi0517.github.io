@@ -17,12 +17,10 @@ profile:
 
 selected_papers: false
 social: false
-featured_projects: true
+featured_projects: false
 
 announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
+  enabled: false
 
 latest_posts:
   enabled: false
@@ -55,6 +53,17 @@ I am particularly interested in **AI Systems and Infrastructure**, especially ef
           <h3><i class="fas fa-book"></i></h3>
           <h5 class="card-title">Publications</h5>
           <p class="card-text small">Peer-reviewed papers.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-sm-6 mb-3">
+    <a href="/portfolio/" class="card-link">
+      <div class="card hoverable h-100">
+        <div class="card-body text-center">
+          <h3><i class="fas fa-folder-open"></i></h3>
+          <h5 class="card-title">Portfolio</h5>
+          <p class="card-text small">Research and engineering projects.</p>
         </div>
       </div>
     </a>
