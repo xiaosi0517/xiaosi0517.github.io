@@ -229,8 +229,9 @@ body.sticky-bottom-footer {
     max-width: 590px;
     margin-bottom: 1.45rem;
     color: var(--about-ink);
-    font-size: clamp(2.15rem, 3.1vw, 2.9rem);
-    line-height: 1.16;
+    font-size: clamp(1.9rem, 2.45vw, 2.35rem);
+    font-weight: 800;
+    line-height: 1.18;
   }
 
   p {
@@ -298,12 +299,17 @@ body.sticky-bottom-footer {
   flex-direction: column;
   gap: 0.45rem;
   max-width: 220px;
-  color: #fff;
+  color: #fff !important;
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0.28em;
   line-height: 1.6;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
   text-transform: uppercase;
+
+  span {
+    color: #fff !important;
+  }
 
   &::after {
     width: 2rem;
@@ -331,6 +337,7 @@ body.sticky-bottom-footer {
     margin: 0;
     color: var(--about-ink);
     font-size: 1.45rem;
+    font-weight: 800;
   }
 
   p {
@@ -359,6 +366,7 @@ body.sticky-bottom-footer {
     margin: 0.9rem 0 0.55rem;
     color: var(--about-ink);
     font-size: 1rem;
+    font-weight: 800;
     line-height: 1.25;
   }
 
@@ -422,6 +430,7 @@ body.sticky-bottom-footer {
     margin-bottom: 0.8rem;
     color: var(--about-ink);
     font-size: 1.55rem;
+    font-weight: 800;
   }
 
   p {
@@ -470,7 +479,7 @@ body.sticky-bottom-footer {
   }
 
   .about-hero-copy h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .about-visual-label {
