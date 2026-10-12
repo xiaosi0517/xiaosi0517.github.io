@@ -3,18 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle:
-
-profile:
-  align: left
-  image: prof_pic.jpg
-  image_circular: true
-  more_info: >
-    <p><i class="fas fa-map-marker-alt"></i> San Jose, CA</p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:xiaosizhang0517@gmail.com">Email</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/xiaosi-zhang-97948a201/">LinkedIn</a></p>
-    <p><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=N0-TpGcAAAAJ&hl=en">Google Scholar</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/xiaosi0517">GitHub</a></p>
-
+modern_about: true
 selected_papers: false
 social: false
 featured_projects: false
@@ -26,68 +15,70 @@ latest_posts:
   enabled: false
 ---
 
-**I design systems that make reliable decisions under ambiguity.**
-
-I am a Senior Software Systems Engineer with a Ph.D. in Electrical Engineering and Computer Science from [Vanderbilt University](https://www.vanderbilt.edu/). My expertise spans **robust image registration, visual search algorithms, computer vision, and scalable systems**, with a focus on solving complex engineering problems involving large-scale data and noisy, repetitive visual patterns.
-
-I have extensive experience designing and optimizing **end-to-end, high-throughput data pipelines** for **large-scale data processing, robust visual matching, automated anomaly detection, and intelligent decision-making**, with a strong emphasis on **algorithm reliability, computational efficiency, and system scalability**.
-
-### Core Technical Expertise
-
-- **Robust Image Registration & Visual Search** — Developing reliable matching and search algorithms using **template matching, normalized cross-correlation (NCC), edge-based features, candidate discovery and ranking, periodic-pattern disambiguation, and subpixel refinement**.
-- **Scalable Systems & Parallel Computing** — Designing **high-throughput processing pipelines**, scalable workload generation frameworks, and parallel execution workflows using **multiprocessing, workload partitioning, and HPC infrastructure**.
-- **Statistical Analysis & Anomaly Detection** — Building automated image analytics and diagnostic pipelines using **robust statistics, Median/MAD Z-scores, outlier detection, and failure classification** to identify meaningful patterns across large datasets.
-- **Interactive Engineering Tools & Visualization** — Building **interactive engineering applications, visual analytics dashboards, and human-in-the-loop diagnostic tools** to make complex algorithms and large-scale data intuitive, explainable, and actionable.
-- **Machine Learning & AI Systems** — Applying **deep learning and image translation** to real-world engineering problems, while exploring **LLM inference optimization, quantization, scheduling, and agentic AI systems**.
-- **System Design & Performance Optimization** — Translating ambiguous engineering requirements into reliable solutions through **problem decomposition, algorithmic trade-offs, performance profiling, resource optimization, and reproducible evaluation**.
-
-### Current Interests
-
-I am particularly interested in **AI Systems and Infrastructure**, especially efficient LLM inference, resource-aware scheduling, and intelligent automation. My goal is to apply my experience in **robust algorithms, scalable computing, and production engineering** to building efficient and reliable AI systems.
-
-<div class="row mt-4">
-  <div class="col-sm-6 mb-3">
-    <a href="/publications/" class="card-link">
-      <div class="card hoverable h-100">
-        <div class="card-body text-center">
-          <h3><i class="fas fa-book"></i></h3>
-          <h5 class="card-title">Publications</h5>
-          <p class="card-text small">Peer-reviewed papers.</p>
-        </div>
-      </div>
-    </a>
+<section class="about-hero">
+  <div class="about-hero-copy">
+    <p class="about-kicker">Software Systems Engineer &middot; Ph.D.</p>
+    <h1>Building intelligent systems for real-world problems.</h1>
+    <p>
+      I am a Senior Software Systems Engineer at <a href="https://www.pdf.com/">PDF Solutions</a>, working on semiconductor inspection systems that combine computer vision, machine learning, and large-scale computing to solve challenging real-world problems.
+    </p>
+    <p>
+      I enjoy turning complex problems into practical, reliable solutions, from designing robust algorithms to building efficient systems that scale in production.
+    </p>
+    <p>
+      With a Ph.D. in EECS from <a href="https://www.vanderbilt.edu/">Vanderbilt University</a>, my background bridges semiconductor engineering, computer vision, and AI systems, giving me a practical perspective on both real-world applications and fundamental techniques.
+    </p>
+    <div class="about-contact-row" aria-label="Contact and profile links">
+      <a href="mailto:xiaosizhang0517@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+      <a href="https://www.linkedin.com/in/xiaosi-zhang-97948a201/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://github.com/xiaosi0517"><i class="fab fa-github"></i>GitHub</a>
+      <a href="/cv/"><i class="fas fa-file-alt"></i>CV</a>
+      <span><i class="fas fa-map-marker-alt"></i>Bay Area, CA</span>
+    </div>
   </div>
-  <div class="col-sm-6 mb-3">
-    <a href="/portfolio/" class="card-link">
-      <div class="card hoverable h-100">
-        <div class="card-body text-center">
-          <h3><i class="fas fa-folder-open"></i></h3>
-          <h5 class="card-title">Portfolio</h5>
-          <p class="card-text small">Research and engineering projects.</p>
-        </div>
-      </div>
-    </a>
+  <div class="about-hero-visual">
+    <img src="/assets/img/projects/robust-visual-search-registration.jpg" alt="Semiconductor visual search and registration project overview">
+    <div class="about-visual-label">
+      <span>From algorithms</span>
+      <span>to real-world impact</span>
+    </div>
   </div>
-  <div class="col-sm-6 mb-3">
-    <a href="/blog/" class="card-link">
-      <div class="card hoverable h-100">
-        <div class="card-body text-center">
-          <h3><i class="fas fa-pen-nib"></i></h3>
-          <h5 class="card-title">Blog</h5>
-          <p class="card-text small">Thoughts on research, technology, and life.</p>
-        </div>
-      </div>
-    </a>
+</section>
+
+<section class="about-focus">
+  <div class="about-section-head">
+    <h2>What I Focus On</h2>
+    <p>I care about building robust and efficient systems that solve real-world problems. Here are a few areas I work on and care about:</p>
   </div>
-  <div class="col-sm-6 mb-3">
-    <a href="/photography/" class="card-link">
-      <div class="card hoverable h-100">
-        <div class="card-body text-center">
-          <h3><i class="fas fa-camera"></i></h3>
-          <h5 class="card-title">Photography</h5>
-          <p class="card-text small">Capturing moments through the lens.</p>
-        </div>
-      </div>
-    </a>
+  <div class="about-focus-grid">
+    <article class="about-focus-card">
+      <span class="about-focus-icon icon-blue"><i class="fas fa-image"></i></span>
+      <h3>Computer Vision for Real-World Applications</h3>
+      <p>Developing robust visual algorithms to solve challenging problems in industrial and scientific domains.</p>
+    </article>
+    <article class="about-focus-card">
+      <span class="about-focus-icon icon-teal"><i class="fas fa-microchip"></i></span>
+      <h3>Efficient &amp; Scalable Systems</h3>
+      <p>Designing high-performance pipelines that are efficient, reliable, and ready for production use.</p>
+    </article>
+    <article class="about-focus-card">
+      <span class="about-focus-icon icon-orange"><i class="fas fa-database"></i></span>
+      <h3>Data-Driven Solutions</h3>
+      <p>Leveraging data and machine learning to improve system performance and automate complex workflows.</p>
+    </article>
+    <article class="about-focus-card">
+      <span class="about-focus-icon icon-pink"><i class="fas fa-gear"></i></span>
+      <h3>Turning Research into Practice</h3>
+      <p>Bridging research, engineering, and product development to deliver practical tools and real-world impact.</p>
+    </article>
   </div>
-</div>
+</section>
+
+<section class="about-beyond">
+  <img src="/assets/img/photography/december-2026-02.jpg" alt="Golden wetland landscape at Coyote Hills Regional Park">
+  <div class="about-beyond-copy">
+    <h2>Beyond Work</h2>
+    <p>Outside of engineering, I enjoy photography, hiking, exploring new places, and spending time in nature. These moments help me stay curious, recharge, and bring fresh perspectives to my work.</p>
+    <a class="about-beyond-link" href="/photography/"><i class="fas fa-camera"></i>Photography</a>
+  </div>
+</section>

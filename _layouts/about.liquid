@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% if page.modern_about %}
+<main class="modern-about">
+  {{ content }}
+</main>
+{% else %}
 <div class="about-wrapper">
   <!-- Left Sidebar Panel -->
   {% if page.profile %}
@@ -103,3 +108,4 @@ layout: default
     {% endif %}
   </main>
 </div>
+{% endif %}
