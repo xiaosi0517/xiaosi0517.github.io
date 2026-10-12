@@ -168,7 +168,12 @@ ninja.data = [{
       },{id: "news-published-my-first-blog-post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server-lessons-from-deploying-numpy-scipy-and-opencv-in-an-offline-legacy-engineering-environment",
           title: 'Published my first blog post: Running a Modern Python CV Stack on a...',
           description: "",
-          section: "News",},{id: "projects-high-throughput-visual-anomaly-detection",
+          section: "News",},{id: "projects-efficient-llm-inference-amp-scheduling",
+          title: 'Efficient LLM Inference &amp;amp; Scheduling',
+          description: "Optimizing LLM inference through prefill/decode scheduling, W8A16 quantization, and GPU memory efficiency.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/efficient-llm-inference-scheduling/";
+            },},{id: "projects-high-throughput-visual-anomaly-detection",
           title: 'High-Throughput Visual Anomaly Detection',
           description: "Detecting and explaining meaningful anomalies across large-scale image datasets.",
           section: "Projects",handler: () => {
