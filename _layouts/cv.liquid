@@ -5,6 +5,7 @@ layout: default
 {% assign basics = site.data.resume.basics %}
 {% assign work_entries = site.data.resume.work | default: empty %}
 {% assign education_entries = site.data.resume.education | default: empty %}
+{% assign publication_entries = site.data.resume.publications | default: empty %}
 {% assign award_entries = site.data.resume.awards | default: empty %}
 {% assign language_entries = site.data.resume.languages | default: empty %}
 
@@ -17,6 +18,10 @@ layout: default
   </header>
 
   <article class="cv-modern-grid">
+    <section class="cv-photo-panel" aria-label="Profile photo">
+      <img src="{{ basics.image | default: '/assets/img/prof_pic.jpg' }}" alt="Portrait of {{ basics.name | default: 'Xiaosi Zhang' }}">
+    </section>
+
     <section class="cv-card cv-contact-card">
       <div class="cv-section-title">
         <span class="cv-icon"><i class="fas fa-user"></i></span>
@@ -128,7 +133,7 @@ layout: default
     {% endif %}
 
     {% if education_entries.size > 0 %}
-      <section class="cv-card">
+      <section class="cv-card cv-wide-card">
         <div class="cv-section-title">
           <span class="cv-icon"><i class="fas fa-graduation-cap"></i></span>
           <h2>Education</h2>
@@ -161,7 +166,29 @@ layout: default
       </section>
     {% endif %}
 
-    <section class="cv-card">
+    {% if publication_entries.size > 0 %}
+      <section class="cv-card cv-wide-card cv-publications-card">
+        <div class="cv-section-title cv-section-title-with-link">
+          <span class="cv-icon"><i class="fas fa-file-lines"></i></span>
+          <h2>Publications</h2>
+        </div>
+        <div class="cv-publication-list">
+          {% for publication in publication_entries %}
+            {% assign publication_year = publication.releaseDate | split: "-" | first %}
+            <article class="cv-publication-item">
+              <span class="cv-publication-index">{{ forloop.index }}</span>
+              <div class="cv-publication-copy">
+                <h3>{{ publication.name }}</h3>
+                <p>{{ publication.authors }}</p>
+                <p><em>{{ publication.publisher }}</em>{% if publication_year %} ({{ publication_year }}){% endif %}{% if publication.summary %} · {{ publication.summary }}{% endif %}</p>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <section class="cv-card cv-wide-card">
       <div class="cv-section-title">
         <span class="cv-icon"><i class="fas fa-award"></i></span>
         <h2>Highlights</h2>

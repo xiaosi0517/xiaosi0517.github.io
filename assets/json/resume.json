@@ -2,7 +2,7 @@
   "basics": {
     "name": "Xiaosi Zhang",
     "label": "Senior Software Systems Engineer",
-    "image": "",
+    "image": "/assets/img/prof_pic.jpg",
     "email": "",
     "summary": "Senior Software Systems Engineer with a Ph.D. from Vanderbilt University, working at the intersection of semiconductor systems, computer vision, and machine learning. Designs scalable end-to-end solutions for registration, defect detection, and robust matching in structured environments.",
     "location": {
@@ -142,6 +142,40 @@
       "endDate": "2018-06-01",
       "score": "3.89/4.0",
       "courses": []
+    }
+  ],
+  "publications": [
+    {
+      "name": "Graphene-based microfluidic perforated microelectrode arrays for retinal electrophysiological studies",
+      "publisher": "Lab on a Chip",
+      "releaseDate": "2023-01-01",
+      "authors": "A. Esteban-Linares*, X. Zhang*, H. H. Lee, M. L. Risner, S. M. Weiss, and Y. Q. Xu",
+      "summary": "* Equal contribution"
+    },
+    {
+      "name": "Probing light-stimulated activities in the retina via transparent graphene electrodes",
+      "publisher": "ACS Applied Bio Materials",
+      "releaseDate": "2022-01-01",
+      "authors": "X. Zhang, H. Lee, Y. Zhang, T. S. Walmsley, D. Li, E. Levine, and Y. Q. Xu"
+    },
+    {
+      "name": "In situ monitoring of electrical and optoelectronic properties of suspended graphene ribbons during laser-induced morphological changes",
+      "publisher": "Nanoscale Advances",
+      "releaseDate": "2020-01-01",
+      "authors": "X. Zhang, T. S. Walmsley, and Y. Q. Xu"
+    },
+    {
+      "name": "Vapor plume oscillation mechanisms in transient keyhole during tandem dual beam fiber laser welding",
+      "publisher": "Optics and Lasers in Engineering",
+      "releaseDate": "2018-01-01",
+      "authors": "X. Chen*, X. Zhang*, S. Pang, R. Hu, and J. Xiao",
+      "summary": "* Equal contribution"
+    },
+    {
+      "name": "Sub-microsecond vapor plume dynamics under different keyhole penetration regimes in deep penetration laser welding",
+      "publisher": "Journal of Physics D: Applied Physics",
+      "releaseDate": "2017-01-01",
+      "authors": "X. Chen, S. Pang, X. Shao, C. Wang, X. Zhang, P. Jiang, and J. Xiao"
     }
   ],
   "awards": [

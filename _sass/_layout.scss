@@ -216,7 +216,7 @@ body.sticky-bottom-footer {
 }
 
 .about-kicker {
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.35rem;
   color: var(--global-theme-color);
   font-size: 0.78rem;
   font-weight: 700;
@@ -224,8 +224,57 @@ body.sticky-bottom-footer {
   text-transform: uppercase;
 }
 
+.about-identity {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-profile-photo {
+  width: 7.35rem;
+  height: 7.35rem;
+  flex: 0 0 7.35rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 14px 34px rgba(7, 19, 61, 0.14);
+}
+
+.about-identity-copy {
+  min-width: 0;
+}
+
+.about-name {
+  margin: 0 0 0.65rem;
+  color: var(--about-ink);
+  font-size: clamp(2rem, 3.1vw, 2.65rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.about-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.35rem;
+  color: var(--about-muted);
+  font-size: 0.94rem;
+  font-weight: 600;
+
+  span {
+    display: inline-flex;
+    gap: 0.45rem;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  i {
+    color: var(--global-theme-color);
+    font-size: 1rem;
+  }
+}
+
 .about-hero-copy {
-  h1 {
+  .about-hero-title {
     max-width: 590px;
     margin-bottom: 1.45rem;
     color: var(--about-ink);
@@ -240,6 +289,14 @@ body.sticky-bottom-footer {
     color: var(--about-muted);
     font-size: 1.02rem;
     line-height: 1.5;
+  }
+
+  .about-kicker {
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
   }
 }
 
@@ -503,7 +560,23 @@ body.sticky-bottom-footer {
     padding-top: 0;
   }
 
-  .about-hero-copy h1 {
+  .about-identity {
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .about-profile-photo {
+    width: 5.6rem;
+    height: 5.6rem;
+    flex-basis: 5.6rem;
+  }
+
+  .about-meta-row {
+    gap: 0.55rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .about-hero-title {
     font-size: 2rem;
   }
 

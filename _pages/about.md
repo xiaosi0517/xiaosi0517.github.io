@@ -17,8 +17,19 @@ latest_posts:
 
 <section class="about-hero">
   <div class="about-hero-copy">
-    <p class="about-kicker">Software Systems Engineer &middot; Ph.D.</p>
-    <h1>Building intelligent systems for real-world problems.</h1>
+    <div class="about-identity">
+      <img class="about-profile-photo" src="/assets/img/prof_pic.jpg" alt="Portrait of Xiaosi Zhang">
+      <div class="about-identity-copy">
+        <p class="about-kicker">Software Systems Engineer &middot; Ph.D.</p>
+        <h1 class="about-name">Xiaosi Zhang</h1>
+        <div class="about-meta-row" aria-label="Professional details">
+          <span><i class="fas fa-map-marker-alt"></i>Bay Area, CA</span>
+          <span><i class="fas fa-briefcase"></i>PDF Solutions</span>
+          <span><i class="fas fa-graduation-cap"></i>Vanderbilt University</span>
+        </div>
+      </div>
+    </div>
+    <h2 class="about-hero-title">Building intelligent systems for real-world problems.</h2>
     <p>
       I am a Senior Software Systems Engineer at <a href="https://www.pdf.com/">PDF Solutions</a>, working on semiconductor inspection systems that combine computer vision, machine learning, and large-scale computing to solve challenging real-world problems.
     </p>
