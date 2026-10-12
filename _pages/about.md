@@ -27,20 +27,24 @@ latest_posts:
   enabled: false
 ---
 
-*I design systems that make reliable decisions under ambiguity.*
+**I design systems that make reliable decisions under ambiguity.**
 
-I am a **Senior Software Systems Engineer** with a Ph.D. from [Vanderbilt University](https://www.vanderbilt.edu/), working at the intersection of **semiconductor systems**, **computer vision**, and **machine learning**.
+I am a Senior Software Systems Engineer with a Ph.D. in Electrical Engineering and Computer Science from [Vanderbilt University](https://www.vanderbilt.edu/). My expertise spans **robust image registration, visual search algorithms, computer vision, and scalable systems**, with a focus on solving complex engineering problems involving large-scale data and noisy, repetitive visual patterns.
 
-My work focuses on identifying high-impact problems and delivering end-to-end solutions, including:
+I have extensive experience designing and optimizing **end-to-end, high-throughput data pipelines** for **large-scale data processing, robust visual matching, automated anomaly detection, and intelligent decision-making**, with a strong emphasis on **algorithm reliability, computational efficiency, and system scalability**.
 
-- **Problem identification** and solution design in complex, real-world systems  
-- **Algorithm development and optimization** for accuracy, efficiency, and robustness  
-- **Scalable system design** for large-scale data processing 
-- Resource-efficient computing to **reduce cost and improve performance** at scale
-- Deployment in **HPC and cloud environments** (e.g., SGE, AWS)  
-- Cross-functional **collaboration** and **on-site technical support** for customer-facing issues  
+### Core Technical Expertise
 
-to build **end-to-end solutions** for problems such as **registration**, **defect detection**, and **robust matching** in highly structured and noisy environments.
+- **Robust Image Registration & Visual Search** — Developing reliable matching and search algorithms using **template matching, normalized cross-correlation (NCC), edge-based features, candidate discovery and ranking, periodic-pattern disambiguation, and subpixel refinement**.
+- **Scalable Systems & Parallel Computing** — Designing **high-throughput processing pipelines**, scalable workload generation frameworks, and parallel execution workflows using **multiprocessing, workload partitioning, and HPC infrastructure**.
+- **Statistical Analysis & Anomaly Detection** — Building automated image analytics and diagnostic pipelines using **robust statistics, Median/MAD Z-scores, outlier detection, and failure classification** to identify meaningful patterns across large datasets.
+- **Interactive Engineering Tools & Visualization** — Building **interactive engineering applications, visual analytics dashboards, and human-in-the-loop diagnostic tools** to make complex algorithms and large-scale data intuitive, explainable, and actionable.
+- **Machine Learning & AI Systems** — Applying **deep learning and image translation** to real-world engineering problems, while exploring **LLM inference optimization, quantization, scheduling, and agentic AI systems**.
+- **System Design & Performance Optimization** — Translating ambiguous engineering requirements into reliable solutions through **problem decomposition, algorithmic trade-offs, performance profiling, resource optimization, and reproducible evaluation**.
+
+### Current Interests
+
+I am particularly interested in **AI Systems and Infrastructure**, especially efficient LLM inference, resource-aware scheduling, and intelligent automation. My goal is to apply my experience in **robust algorithms, scalable computing, and production engineering** to building efficient and reliable AI systems.
 
 <div class="row mt-4">
   <div class="col-sm-6 mb-3">

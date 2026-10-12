@@ -22,6 +22,17 @@
       "summary": "",
       "projects": [
         {
+          "name": "Scalable Synthetic Workload Generation Framework",
+          "dates": "Aug 2026 - Present",
+          "highlights": [
+            "Designed a **configurable synthetic workload generation framework** for large-scale semiconductor inspection systems, supporting diverse geometric patterns, spatial distributions, tile configurations, and workload scales without relying on proprietary customer data.",
+            "Built a **multi-format data pipeline** integrating layout generation, structured recipe data, spatial metadata, and registration locations, ensuring consistent geometry, coordinate systems, and data relationships across outputs.",
+            "Implemented **parallel workload generation** using swath-based partitioning and configurable CPU multiprocessing, enabling efficient processing of large-scale structured datasets.",
+            "Optimized **data representation and storage efficiency** through hierarchical geometry reuse, reducing **per-swath layout file size by 99.4% (530 KB -> 3 KB)** compared with flat representations in a representative test.",
+            "Developed a **reproducible workload generation framework** designed to support **billion-scale synthetic pad datasets**, enabling downstream inspection, registration, and system scalability evaluation."
+          ]
+        },
+        {
           "name": "High-Throughput SEM Inspection & Anomaly Analysis System",
           "dates": "Aug 2026 - Sep 2026",
           "highlights": [
