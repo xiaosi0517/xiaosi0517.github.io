@@ -37,7 +37,7 @@ latest_posts:
     </div>
   </div>
   <div class="about-hero-visual">
-    <img src="/assets/img/projects/robust-visual-search-registration.jpg" alt="Semiconductor visual search and registration project overview">
+    <img src="/assets/img/about/wafer-hero.jpg" alt="Close-up of a semiconductor wafer with chip patterns">
     <div class="about-visual-label">
       <span>From algorithms</span>
       <span>to real-world impact</span>

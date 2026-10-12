@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio
+title: Projects
 permalink: /portfolio/
 description: My research projects and work.
 nav: true
