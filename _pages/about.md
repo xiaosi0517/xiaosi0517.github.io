@@ -22,11 +22,6 @@ latest_posts:
       <div class="about-identity-copy">
         <p class="about-kicker">Software Systems Engineer &middot; Ph.D.</p>
         <h1 class="about-name">Xiaosi Zhang</h1>
-        <div class="about-meta-row" aria-label="Professional details">
-          <span><i class="fas fa-map-marker-alt"></i>Bay Area, CA</span>
-          <span><i class="fas fa-briefcase"></i>PDF Solutions</span>
-          <span><i class="fas fa-graduation-cap"></i>Vanderbilt University</span>
-        </div>
       </div>
     </div>
     <h2 class="about-hero-title">Building intelligent systems for real-world problems.</h2>
@@ -44,7 +39,6 @@ latest_posts:
       <a href="https://www.linkedin.com/in/xiaosi-zhang-97948a201/"><i class="fab fa-linkedin"></i>LinkedIn</a>
       <a href="https://github.com/xiaosi0517"><i class="fab fa-github"></i>GitHub</a>
       <a href="/cv/"><i class="fas fa-file-alt"></i>CV</a>
-      <span><i class="fas fa-map-marker-alt"></i>Bay Area, CA</span>
     </div>
   </div>
   <div class="about-hero-visual">
