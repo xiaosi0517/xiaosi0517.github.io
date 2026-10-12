@@ -161,7 +161,12 @@ ninja.data = [{
       },{id: "news-published-my-first-blog-post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server-lessons-from-deploying-numpy-scipy-and-opencv-in-an-offline-legacy-engineering-environment",
           title: 'Published my first blog post: Running a Modern Python CV Stack on a...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-robust-visual-search-amp-registration",
+          title: 'Robust Visual Search &amp;amp; Registration',
+          description: "Finding reliable visual correspondences in large-scale, repetitive, and ambiguous geometric patterns.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/robust-visual-search-registration/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',

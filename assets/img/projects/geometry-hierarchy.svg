@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290" width="400" height="290" role="img" aria-labelledby="geo-hier-title geo-hier-desc">
+  <title id="geo-hier-title">Hierarchical layout</title>
+  <desc id="geo-hier-desc">A layout tree: one top cell places four copies of a block, and each block places nine copies of a cell. Geometry is stored once per definition and reused by reference.</desc>
+  <rect width="400" height="290" fill="#f4f8fa"/>
+  <path d="M70 74V130" stroke="#5d7384" stroke-width="3"/>
+  <path d="M70 170V226" stroke="#5d7384" stroke-width="3"/>
+  <rect x="12" y="34" width="116" height="40" rx="8" fill="#ffffff" stroke="#2a6f97" stroke-width="2.5"/>
+  <text x="70" y="61" text-anchor="middle" fill="#17344a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600">Top</text>
+  <rect x="12" y="130" width="116" height="40" rx="8" fill="#ffffff" stroke="#2a6f97" stroke-width="2.5"/>
+  <text x="70" y="157" text-anchor="middle" fill="#17344a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600">Block ×4</text>
+  <rect x="12" y="226" width="116" height="40" rx="8" fill="#ffffff" stroke="#2a6f97" stroke-width="2.5"/>
+  <text x="70" y="253" text-anchor="middle" fill="#17344a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600">Cell ×9</text>
+  <rect x="152" y="20" width="240" height="240" rx="8" fill="#ffffff" stroke="#d3dee6" stroke-width="2"/>
+  <rect x="160" y="28" width="108" height="108" rx="5" fill="#e5f2f8" stroke="#2a6f97" stroke-width="2.5"/>
+  <path d="M170 43H192M170 50H192M170 57H192" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M170 77H192M170 84H192M170 91H192" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M170 111H192M170 118H192M170 125H192" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 43H226M204 50H226M204 57H226" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 77H226M204 84H226M204 91H226" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 111H226M204 118H226M204 125H226" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M238 43H260M238 50H260M238 57H260" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M238 77H260M238 84H260M238 91H260" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M238 111H260M238 118H260M238 125H260" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <rect x="160" y="144" width="108" height="108" rx="5" fill="#f4f8fa" stroke="#d3dee6" stroke-width="1.5"/>
+  <path d="M170 159H192M170 166H192M170 173H192" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M170 193H192M170 200H192M170 207H192" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M170 227H192M170 234H192M170 241H192" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 159H226M204 166H226M204 173H226" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 193H226M204 200H226M204 207H226" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 227H226M204 234H226M204 241H226" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M238 159H260M238 166H260M238 173H260" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M238 193H260M238 200H260M238 207H260" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M238 227H260M238 234H260M238 241H260" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <rect x="276" y="28" width="108" height="108" rx="5" fill="#f4f8fa" stroke="#d3dee6" stroke-width="1.5"/>
+  <path d="M286 43H308M286 50H308M286 57H308" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M286 77H308M286 84H308M286 91H308" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M286 111H308M286 118H308M286 125H308" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 43H342M320 50H342M320 57H342" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 77H342M320 84H342M320 91H342" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 111H342M320 118H342M320 125H342" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M354 43H376M354 50H376M354 57H376" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M354 77H376M354 84H376M354 91H376" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M354 111H376M354 118H376M354 125H376" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <rect x="276" y="144" width="108" height="108" rx="5" fill="#f4f8fa" stroke="#d3dee6" stroke-width="1.5"/>
+  <path d="M286 159H308M286 166H308M286 173H308" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M286 193H308M286 200H308M286 207H308" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M286 227H308M286 234H308M286 241H308" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 159H342M320 166H342M320 173H342" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 193H342M320 200H342M320 207H342" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M320 227H342M320 234H342M320 241H342" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M354 159H376M354 166H376M354 173H376" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M354 193H376M354 200H376M354 207H376" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+  <path d="M354 227H376M354 234H376M354 241H376" stroke="#8eacbc" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" role="img" aria-labelledby="card-title card-desc">
+  <title id="card-title">Robust visual search field</title>
+  <desc id="card-desc">A field of repeated geometric cells. A dashed window covers the repeating pattern, and a second window marks one distinctive registration target.</desc>
+  <rect width="960" height="640" fill="#f4f8fa"/>
+  <g fill="#ffffff" stroke="#d3dee6" stroke-width="4">
+    <rect x="20" y="20" width="218" height="290" rx="16"/>
+    <rect x="254" y="20" width="218" height="290" rx="16"/>
+    <rect x="488" y="20" width="218" height="290" rx="16"/>
+    <rect x="20" y="330" width="218" height="290" rx="16"/>
+    <rect x="254" y="330" width="218" height="290" rx="16"/>
+    <rect x="488" y="330" width="218" height="290" rx="16"/>
+    <rect x="722" y="330" width="218" height="290" rx="16"/>
+  </g>
+  <g fill="none" stroke="#7f9aab" stroke-width="12" stroke-linecap="round">
+    <path d="M48 111H210M48 147H210M48 183H210M48 219H210"/>
+    <path d="M282 111H444M282 147H444M282 183H444M282 219H444"/>
+    <path d="M516 111H678M516 147H678M516 183H678M516 219H678"/>
+    <path d="M48 421H210M48 457H210M48 493H210M48 529H210"/>
+    <path d="M282 421H444M282 457H444M282 493H444M282 529H444"/>
+    <path d="M516 421H678M516 457H678M516 493H678M516 529H678"/>
+    <path d="M750 421H912M750 457H912M750 493H912M750 529H912"/>
+  </g>
+  <rect x="722" y="20" width="218" height="290" rx="16" fill="#e5f2f8" stroke="#2a6f97" stroke-width="8"/>
+  <path d="M758 86H820M758 86V230" fill="none" stroke="#2a6f97" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="852" y="198" width="58" height="44" rx="6" fill="none" stroke="#2a6f97" stroke-width="10"/>
+  <rect x="8" y="8" width="700" height="314" rx="22" fill="rgba(93,127,147,0.05)" stroke="#7d97a8" stroke-width="5" stroke-dasharray="12 10"/>
+  <rect x="710" y="8" width="242" height="314" rx="22" fill="rgba(42,111,151,0.08)" stroke="#2a6f97" stroke-width="6" stroke-dasharray="12 10"/>
+  <g transform="translate(812,148)" fill="none" stroke="#2a6f97" stroke-width="8" stroke-linecap="round">
+    <circle r="26" fill="#2a6f97" fill-opacity="0.16" stroke="none"/>
+    <circle r="10" fill="#2a6f97" stroke="none"/>
+    <path d="M0-28V-14M0 14V28M-28 0H-14M14 0H28"/>
+  </g>
+</svg>
