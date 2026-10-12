@@ -3,10 +3,10 @@ layout: page
 title: Portfolio
 permalink: /portfolio/
 description: My research projects and work.
-nav: false
+nav: true
 nav_order: 3
 display_categories: [research]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
@@ -19,8 +19,8 @@ horizontal: false
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+  <div class="container project-list-horizontal">
+    <div class="row row-cols-1">
     {% for project in sorted_projects %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
@@ -40,8 +40,8 @@ horizontal: false
 {% assign sorted_projects = site.projects | sort: "importance" %}
 
 {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+  <div class="container project-list-horizontal">
+    <div class="row row-cols-1">
     {% for project in sorted_projects %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
