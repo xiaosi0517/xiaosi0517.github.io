@@ -7,7 +7,7 @@ category: research
 importance: 1
 featured: true
 img: assets/img/projects/robust-visual-search-registration.jpg
-img_alt: Synthetic chip layout with a repetitive memory region and two distinctive registration candidates highlighted
+img_alt: Synthetic chip layout with callouts for two distinctive registration locations and a repetitive memory region
 tech:
   - Computer Vision
   - Geometric Computing

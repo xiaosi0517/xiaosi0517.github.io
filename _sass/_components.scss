@@ -311,11 +311,7 @@ pre.mermaid {
     img {
       display: block;
       width: 100%;
-      max-width: 280px;
       height: auto;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      object-position: center;
       border-radius: 8px;
     }
   }
@@ -341,22 +337,8 @@ pre.mermaid {
   }
 
   @media (min-width: 768px) {
-    a.featured-project {
-      flex-direction: row;
-      align-items: stretch;
-    }
-
     .featured-project-visual {
-      flex: 0 0 240px;
-      border-bottom: 0;
-      border-right: 1px solid var(--global-divider-color);
-    }
-
-    .featured-project-copy {
-      flex: 1 1 56%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 0.9rem;
     }
   }
 }
