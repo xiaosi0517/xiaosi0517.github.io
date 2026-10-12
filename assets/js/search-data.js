@@ -11,17 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "My academic CV.",
+          description: "My academic and professional background.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-publications",
-          title: "Publications",
-          description: "My publications in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "Projects",
@@ -64,17 +57,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/llm-system-architecture-from-model-to-production/";
-          
-        },
-      },{id: "post-the-market-is-not-reacting-to-reality",
-        
-          title: "The Market Is Not Reacting to Reality",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/market-expectations-vs-reality/";
           
         },
       },{id: "post-the-state-of-ai-a-deep-structural-analysis-2024-2026",
