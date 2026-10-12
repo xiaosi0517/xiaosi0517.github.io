@@ -168,11 +168,26 @@ ninja.data = [{
       },{id: "news-published-my-first-blog-post-running-a-modern-python-cv-stack-on-a-15-year-old-linux-server-lessons-from-deploying-numpy-scipy-and-opencv-in-an-offline-legacy-engineering-environment",
           title: 'Published my first blog post: Running a Modern Python CV Stack on a...',
           description: "",
-          section: "News",},{id: "projects-robust-visual-search-amp-registration",
+          section: "News",},{id: "projects-high-throughput-visual-anomaly-detection",
+          title: 'High-Throughput Visual Anomaly Detection',
+          description: "Detecting and explaining meaningful anomalies across large-scale image datasets.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/high-throughput-visual-anomaly-detection/";
+            },},{id: "projects-image-to-image-translation-for-robust-matching",
+          title: 'Image-to-Image Translation for Robust Matching',
+          description: "Bridging the gap between idealized geometric representations and noisy visual observations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/image-to-image-translation-robust-matching/";
+            },},{id: "projects-robust-visual-search-amp-registration",
           title: 'Robust Visual Search &amp;amp; Registration',
           description: "Finding reliable visual correspondences in large-scale, repetitive, and ambiguous geometric patterns.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/robust-visual-search-registration/";
+            },},{id: "projects-scalable-synthetic-workload-generation",
+          title: 'Scalable Synthetic Workload Generation',
+          description: "Generating and processing massive structured datasets through efficient representations and parallel execution.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/scalable-synthetic-workload-generation/";
             },},{
         id: 'social-email',
         title: 'email',

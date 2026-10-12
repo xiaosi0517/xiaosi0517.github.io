@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" width="960" height="450" role="img">
+<title>Two visual domains, one physical structure</title>
+<desc>A synthetic idealized cross-shaped layout is shown beside a noisy grayscale observation of the same geometry. Orange boxes mark the corresponding center feature.</desc>
+<rect width="960" height="450" fill="#f4f8fa"/>
+
+<defs>
+  <filter id="noise" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" seed="9" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope=".38"/></feComponentTransfer>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.5"/></filter>
+  <marker id="arrow-blue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#2a6f97"/>
+  </marker>
+  <marker id="arrow-purple" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#7257b5"/>
+  </marker>
+</defs>
+
+<text x="40" y="64" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Idealized layout</text><rect x="40" y="74" width="400" height="310" rx="10" fill="#fff" stroke="#d3dee6"/>
+<text x="520" y="64" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Noisy observation</text><rect x="520" y="74" width="400" height="310" rx="10" fill="#fff" stroke="#d3dee6"/>
+<rect x="58" y="92" width="364" height="274" rx="6" fill="#10171d"/>
+<rect x="208.0" y="197.0" width="64" height="64" fill="none" stroke="#2a6f97" stroke-width="4"/>
+<path d="M70 211.0H208.0M70 229.0H208.0M70 247.0H208.0M272.0 211.0H410M272.0 229.0H410M272.0 247.0H410" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M222.0 102V197.0M240.0 102V197.0M258.0 102V197.0M222.0 261.0V356M240.0 261.0V356M258.0 261.0V356" stroke="#8ea8e8" stroke-width="3"/>
+<rect x="538" y="92" width="364" height="274" rx="6" fill="#34393d"/>
+<g opacity=".78">
+<rect x="688.0" y="197.0" width="64" height="64" fill="none" stroke="#d9dde0" stroke-width="4"/>
+<path d="M550 211.0H688.0M550 229.0H688.0M550 247.0H688.0M752.0 211.0H890M752.0 229.0H890M752.0 247.0H890" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M702.0 102V197.0M720.0 102V197.0M738.0 102V197.0M702.0 261.0V356M720.0 261.0V356M738.0 261.0V356" stroke="#8ea8e8" stroke-width="3"/></g>
+<rect x="538" y="92" width="364" height="274" rx="6" fill="#fff" filter="url(#noise)" opacity=".58"/>
+<path d="M456 229H504" stroke="#2a6f97" stroke-width="3" marker-end="url(#arrow-blue)"/>
+<text x="480" y="211" text-anchor="middle" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">same</text>
+<text x="480" y="226" text-anchor="middle" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">structure</text>
+<rect x="207" y="196" width="66" height="66" fill="none" stroke="#b86a2d" stroke-width="3"/>
+<rect x="687" y="196" width="66" height="66" fill="none" stroke="#b86a2d" stroke-width="3"/>
+<text x="40" y="414" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Sharp boundaries · ideal contrast · little texture</text>
+<text x="520" y="414" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Noise · softened edges · contrast variation</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img">
+<title>Illustrative repetitive lines</title>
+<desc>A synthetic line layout, a softened generated-style rendering, and a noisier reference-style rendering.</desc>
+<rect width="720" height="250" fill="#f4f8fa"/>
+
+<defs>
+  <filter id="noise" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" seed="9" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope=".38"/></feComponentTransfer>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.5"/></filter>
+  <marker id="arrow-blue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#2a6f97"/>
+  </marker>
+  <marker id="arrow-purple" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#7257b5"/>
+  </marker>
+</defs>
+
+<text x="18" y="38" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Input layout</text><rect x="18" y="48" width="216" height="150" rx="10" fill="#fff" stroke="#d3dee6"/>
+<text x="252" y="38" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Generated</text><rect x="252" y="48" width="216" height="150" rx="10" fill="#fff" stroke="#d3dee6"/>
+<text x="486" y="38" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Reference</text><rect x="486" y="48" width="216" height="150" rx="10" fill="#fff" stroke="#d3dee6"/>
+<rect x="30" y="60" width="192" height="126" rx="6" fill="#10171d"/>
+<path d="M44 78.0H208" stroke="#2a6f97" stroke-width="2.5"/>
+<path d="M44 90.9H208" stroke="#2a6f97" stroke-width="2.5"/>
+<path d="M44 103.7H208" stroke="#2a6f97" stroke-width="2.5"/>
+<path d="M44 116.6H208" stroke="#2a6f97" stroke-width="2.5"/>
+<path d="M44 129.4H208" stroke="#2a6f97" stroke-width="2.5"/>
+<path d="M44 142.3H208" stroke="#2a6f97" stroke-width="2.5"/>
+<path d="M44 155.1H208" stroke="#2a6f97" stroke-width="2.5"/>
+<rect x="264" y="60" width="192" height="126" rx="6" fill="#34393d"/>
+<g filter="url(#soft)" opacity=".86">
+<path d="M278 78.0H442" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M278 90.9H442" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M278 103.7H442" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M278 116.6H442" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M278 129.4H442" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M278 142.3H442" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M278 155.1H442" stroke="#d9dde0" stroke-width="2.5"/></g>
+<rect x="264" y="60" width="192" height="126" rx="6" fill="#fff" filter="url(#noise)" opacity=".42"/>
+<rect x="498" y="60" width="192" height="126" rx="6" fill="#34393d"/>
+<g opacity=".78">
+<path d="M512 78.0H676" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M512 90.9H676" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M512 103.7H676" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M512 116.6H676" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M512 129.4H676" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M512 142.3H676" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M512 155.1H676" stroke="#d9dde0" stroke-width="2.5"/></g>
+<rect x="498" y="60" width="192" height="126" rx="6" fill="#fff" filter="url(#noise)" opacity=".58"/>
+<text x="18" y="226" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Question: are the line positions preserved?</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img">
+<title>Illustrative cross structure</title>
+<desc>A synthetic cross layout, a softened generated-style rendering, and a noisier reference-style rendering.</desc>
+<rect width="720" height="250" fill="#f4f8fa"/>
+
+<defs>
+  <filter id="noise" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" seed="9" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope=".38"/></feComponentTransfer>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.5"/></filter>
+  <marker id="arrow-blue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#2a6f97"/>
+  </marker>
+  <marker id="arrow-purple" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#7257b5"/>
+  </marker>
+</defs>
+
+<text x="18" y="38" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Input layout</text><rect x="18" y="48" width="216" height="150" rx="10" fill="#fff" stroke="#d3dee6"/>
+<text x="252" y="38" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Generated</text><rect x="252" y="48" width="216" height="150" rx="10" fill="#fff" stroke="#d3dee6"/>
+<text x="486" y="38" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Reference</text><rect x="486" y="48" width="216" height="150" rx="10" fill="#fff" stroke="#d3dee6"/>
+<rect x="30" y="60" width="192" height="126" rx="6" fill="#10171d"/>
+<rect x="94.0" y="91.0" width="64" height="64" fill="none" stroke="#2a6f97" stroke-width="4"/>
+<path d="M42 105.0H94.0M42 123.0H94.0M42 141.0H94.0M158.0 105.0H210M158.0 123.0H210M158.0 141.0H210" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M108.0 70V91.0M126.0 70V91.0M144.0 70V91.0M108.0 155.0V176M126.0 155.0V176M144.0 155.0V176" stroke="#8ea8e8" stroke-width="3"/>
+<rect x="264" y="60" width="192" height="126" rx="6" fill="#34393d"/>
+<g filter="url(#soft)" opacity=".86">
+<rect x="328.0" y="91.0" width="64" height="64" fill="none" stroke="#d9dde0" stroke-width="4"/>
+<path d="M276 105.0H328.0M276 123.0H328.0M276 141.0H328.0M392.0 105.0H444M392.0 123.0H444M392.0 141.0H444" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M342.0 70V91.0M360.0 70V91.0M378.0 70V91.0M342.0 155.0V176M360.0 155.0V176M378.0 155.0V176" stroke="#8ea8e8" stroke-width="3"/></g>
+<rect x="264" y="60" width="192" height="126" rx="6" fill="#fff" filter="url(#noise)" opacity=".42"/>
+<rect x="498" y="60" width="192" height="126" rx="6" fill="#34393d"/>
+<g opacity=".78">
+<rect x="562.0" y="91.0" width="64" height="64" fill="none" stroke="#d9dde0" stroke-width="4"/>
+<path d="M510 105.0H562.0M510 123.0H562.0M510 141.0H562.0M626.0 105.0H678M626.0 123.0H678M626.0 141.0H678" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M576.0 70V91.0M594.0 70V91.0M612.0 70V91.0M576.0 155.0V176M594.0 155.0V176M612.0 155.0V176" stroke="#8ea8e8" stroke-width="3"/></g>
+<rect x="498" y="60" width="192" height="126" rx="6" fill="#fff" filter="url(#noise)" opacity=".58"/>
+<text x="18" y="226" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Question: do edges meet at the same coordinates?</text>
+</svg>

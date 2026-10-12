@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" width="960" height="350" role="img">
+<title>Why plausible is not the same as correct</title>
+<desc>Four conceptual failure panels show a hallucinated repeat, a blurred boundary, a texture artifact, and a residual alignment offset.</desc>
+<rect width="960" height="350" fill="#f4f8fa"/>
+
+<defs>
+  <filter id="noise" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" seed="9" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope=".38"/></feComponentTransfer>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.5"/></filter>
+  <marker id="arrow-blue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#2a6f97"/>
+  </marker>
+  <marker id="arrow-purple" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#7257b5"/>
+  </marker>
+</defs>
+
+<rect x="24" y="50" width="210" height="274" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="40" y="80" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">Hallucinated repeat</text>
+<rect x="40" y="96" width="178" height="120" rx="6" fill="#34393d"/>
+<g filter="url(#soft)" opacity=".86">
+<path d="M54 114.0H204" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M54 126.0H204" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M54 138.0H204" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M54 150.0H204" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M54 162.0H204" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M54 174.0H204" stroke="#d9dde0" stroke-width="2.5"/>
+<path d="M54 186.0H204" stroke="#d9dde0" stroke-width="2.5"/></g>
+<rect x="40" y="96" width="178" height="120" rx="6" fill="#fff" filter="url(#noise)" opacity=".42"/>
+<path d="M58 156H200" stroke="#b86a2d" stroke-width="3"/>
+<text x="40" y="244" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">A plausible line appears</text>
+<text x="40" y="263" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">where the input had a</text>
+<text x="40" y="282" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">gap.</text>
+<rect x="256" y="50" width="210" height="274" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="272" y="80" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">Blurred boundary</text>
+<rect x="272" y="96" width="178" height="120" rx="6" fill="#34393d"/>
+<g filter="url(#soft)" opacity=".86">
+<rect x="329.0" y="124.0" width="64" height="64" fill="none" stroke="#d9dde0" stroke-width="4"/>
+<path d="M284 138.0H329.0M284 156.0H329.0M284 174.0H329.0M393.0 138.0H438M393.0 156.0H438M393.0 174.0H438" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M343.0 106V124.0M361.0 106V124.0M379.0 106V124.0M343.0 188.0V206M361.0 188.0V206M379.0 188.0V206" stroke="#8ea8e8" stroke-width="3"/></g>
+<rect x="272" y="96" width="178" height="120" rx="6" fill="#fff" filter="url(#noise)" opacity=".42"/>
+<rect x="326" y="126" width="70" height="60" fill="none" stroke="#b86a2d" stroke-width="2.5"/>
+<text x="272" y="244" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Structure is aligned, but</text>
+<text x="272" y="263" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">the edge is too soft.</text>
+<rect x="488" y="50" width="210" height="274" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="504" y="80" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">Texture artifact</text>
+<rect x="504" y="96" width="178" height="120" rx="6" fill="#34393d"/>
+<g filter="url(#soft)" opacity=".86">
+<rect x="518.0" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="539.4" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="560.9" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="582.3" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="603.7" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="625.1" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="646.6" y="110.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="518.0" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="539.4" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="560.9" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="582.3" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="603.7" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="625.1" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="646.6" y="133.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="518.0" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="539.4" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="560.9" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="582.3" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="603.7" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="625.1" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="646.6" y="156.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="518.0" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="539.4" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="560.9" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="582.3" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="603.7" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="625.1" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/>
+<rect x="646.6" y="179.0" width="18" height="18" fill="none" stroke="#d9dde0" stroke-width="2.2"/></g>
+<rect x="504" y="96" width="178" height="120" rx="6" fill="#fff" filter="url(#noise)" opacity=".42"/>
+<path d="M519 114H667" stroke="#b86a2d" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
+<path d="M519 140H667" stroke="#b86a2d" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
+<path d="M519 166H667" stroke="#b86a2d" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
+<path d="M519 192H667" stroke="#b86a2d" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
+<text x="504" y="244" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">A regular texture is</text>
+<text x="504" y="263" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">generated without</text>
+<text x="504" y="282" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">geometric cause.</text>
+<rect x="720" y="50" width="210" height="274" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="736" y="80" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">Residual offset</text>
+<rect x="736" y="96" width="178" height="120" rx="6" fill="#34393d"/>
+<g opacity=".78">
+<rect x="793.0" y="124.0" width="64" height="64" fill="none" stroke="#d9dde0" stroke-width="4"/>
+<path d="M748 138.0H793.0M748 156.0H793.0M748 174.0H793.0M857.0 138.0H902M857.0 156.0H902M857.0 174.0H902" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M807.0 106V124.0M825.0 106V124.0M843.0 106V124.0M807.0 188.0V206M825.0 188.0V206M843.0 188.0V206" stroke="#8ea8e8" stroke-width="3"/></g>
+<rect x="736" y="96" width="178" height="120" rx="6" fill="#fff" filter="url(#noise)" opacity=".58"/>
+<rect x="746" y="106" width="158" height="100" fill="none" stroke="#2a6f97" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="756" y="114" width="158" height="100" fill="none" stroke="#b86a2d" stroke-width="1.8"/>
+<text x="736" y="244" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">The pair is misaligned</text>
+<text x="736" y="263" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">before the model sees it.</text>
+</svg>
