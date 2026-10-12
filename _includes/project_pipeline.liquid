@@ -1,0 +1,27 @@
+{% if page.pipeline %}
+  <div class="project-architecture">
+    <ol class="project-pipeline">
+      {% for stage in page.pipeline %}
+        <li class="project-stage">
+          <div class="project-stage-index">{{ forloop.index }}</div>
+          <div class="project-stage-copy">
+            <h3>{{ stage.title }}</h3>
+            {% if stage.detail %}
+              <p>{{ stage.detail }}</p>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+    {% if page.highlights %}
+      <aside class="project-focus">
+        <h3>Highlighted mechanisms</h3>
+        <ul>
+          {% for item in page.highlights %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </aside>
+    {% endif %}
+  </div>
+{% endif %}

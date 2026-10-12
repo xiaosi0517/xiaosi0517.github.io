@@ -17,6 +17,7 @@ profile:
 
 selected_papers: false
 social: false
+featured_projects: true
 
 announcements:
   enabled: true

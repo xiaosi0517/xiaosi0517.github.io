@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290" width="400" height="290" role="img" aria-labelledby="geo-bool-title geo-bool-desc">
+  <title id="geo-bool-title">Polygon union</title>
+  <desc id="geo-bool-desc">Four overlapping rectangles are merged by a polygon union into one outline with an explicit inner hole.</desc>
+  <rect width="400" height="290" fill="#f4f8fa"/>
+  <defs><marker id="bool-arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#5d7384"/></marker></defs>
+  <rect x="26" y="70" width="132" height="30.799999999999997" fill="#8eacbc" fill-opacity="0.35" stroke="#5f7f93" stroke-width="2"/>
+  <rect x="26" y="171.2" width="132" height="30.800000000000008" fill="#8eacbc" fill-opacity="0.35" stroke="#5f7f93" stroke-width="2"/>
+  <rect x="26" y="70" width="30.799999999999997" height="132" fill="#8eacbc" fill-opacity="0.35" stroke="#5f7f93" stroke-width="2"/>
+  <rect x="127.19999999999999" y="70" width="30.800000000000008" height="132" fill="#8eacbc" fill-opacity="0.35" stroke="#5f7f93" stroke-width="2"/>
+  <text x="92" y="52" text-anchor="middle" fill="#5d7384" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">4 overlapping</text>
+  <path d="M180 136H218" stroke="#5d7384" stroke-width="3" marker-end="url(#bool-arrow)"/>
+  <text x="199" y="116" text-anchor="middle" fill="#17344a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">∪</text>
+  <path d="M236 70h132v132h-132ZM266.8 100.8v70.4h70.4v-70.4Z" fill="#2a6f97" fill-opacity="0.22" fill-rule="evenodd" stroke="#2a6f97" stroke-width="3"/>
+  <text x="302" y="52" text-anchor="middle" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="600">1 polygon + hole</text>
+  <text x="200" y="262" text-anchor="middle" fill="#5d7384" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">overlaps merged, topology kept</text>
+</svg>
