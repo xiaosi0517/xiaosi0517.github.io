@@ -72,6 +72,11 @@ latest_posts:
       <p>Bridging research, engineering, and product development to deliver practical tools and real-world impact.</p>
     </article>
   </div>
+  <div class="about-focus-links" aria-label="More professional links">
+    <a href="/cv/"><i class="fas fa-file-alt"></i>CV</a>
+    <a href="/portfolio/"><i class="fas fa-briefcase"></i>Projects</a>
+    <a href="/blog/"><i class="fas fa-pen-nib"></i>Blog</a>
+  </div>
 </section>
 
 <section class="about-beyond">

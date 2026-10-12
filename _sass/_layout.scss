@@ -408,6 +408,31 @@ body.sticky-bottom-footer {
   background: #ffe3ee;
 }
 
+.about-focus-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+
+  a {
+    display: inline-flex;
+    gap: 0.55rem;
+    align-items: center;
+    color: var(--about-muted) !important;
+    font-weight: 600;
+  }
+
+  i {
+    color: var(--global-theme-color);
+  }
+
+  a:hover {
+    color: var(--global-theme-color) !important;
+  }
+}
+
 .about-beyond {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.95fr);
@@ -490,6 +515,10 @@ body.sticky-bottom-footer {
   .about-section-head,
   .about-focus-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-focus-links {
+    justify-content: flex-start;
   }
 
   .about-focus-card {
