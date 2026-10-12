@@ -259,6 +259,316 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Project case study diagrams
+
+.project-hero-visual {
+  margin: 1rem 0 2.25rem;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+
+  figure {
+    margin: 0;
+  }
+}
+
+.project-links-top {
+  margin-top: 1.5rem;
+}
+
+.llm-phase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.llm-phase-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: var(--global-card-bg-color);
+
+  h3 {
+    margin: 0.7rem 0 0.45rem;
+    font-size: 1.05rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.6;
+  }
+
+  .phase-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.8rem;
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  &.prefill .phase-chip {
+    background: rgba(65, 145, 245, 0.14);
+    color: #246cc9;
+  }
+
+  &.decode .phase-chip {
+    background: rgba(144, 91, 236, 0.15);
+    color: #7247c8;
+  }
+}
+
+.schedule-compare {
+  display: grid;
+  gap: 1.2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(248, 251, 255, 0.9), rgba(255, 255, 255, 0.7));
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.schedule-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr repeat(7, 1fr);
+  gap: 0.35rem;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.75rem;
+  border-left: 2px solid rgba(38, 54, 82, 0.55);
+  border-bottom: 2px solid rgba(38, 54, 82, 0.55);
+
+  &::before {
+    position: absolute;
+    inset: 0.75rem 0.75rem 0.75rem 0.75rem;
+    z-index: 0;
+    background-image: linear-gradient(90deg, rgba(92, 111, 143, 0.12) 1px, transparent 1px);
+    background-size: 12.5% 100%;
+    content: "";
+    pointer-events: none;
+  }
+
+  .block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2rem;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    box-shadow: 0 7px 16px rgba(32, 63, 108, 0.13);
+  }
+
+  .prefill {
+    background: linear-gradient(135deg, #2f87ee, #72b8ff);
+  }
+
+  .decode {
+    background: linear-gradient(135deg, #7a57df, #b58af5);
+  }
+}
+
+.metric-comparison {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+
+  section {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 1.1rem;
+    background: var(--global-card-bg-color);
+  }
+
+  span {
+    display: block;
+    color: var(--global-theme-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  strong {
+    display: block;
+    margin-top: 0.45rem;
+    color: var(--global-text-color);
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0.55rem 0 0;
+    color: var(--global-text-color-light);
+    line-height: 1.55;
+  }
+
+  &.quant span {
+    color: #27865f;
+  }
+}
+
+.quant-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(250, 253, 255, 0.96), rgba(255, 255, 255, 0.75));
+}
+
+.quant-box {
+  min-height: 8.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--global-card-bg-color);
+
+  strong,
+  span {
+    display: block;
+  }
+
+  strong {
+    margin-bottom: 0.45rem;
+    color: var(--global-text-color);
+    line-height: 1.25;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    line-height: 1.5;
+  }
+
+  &.source {
+    box-shadow: inset 0 0 0 999px rgba(142, 99, 237, 0.06);
+  }
+
+  &.compressed {
+    box-shadow: inset 0 0 0 999px rgba(48, 137, 240, 0.06);
+  }
+
+  &.compute {
+    box-shadow: inset 0 0 0 999px rgba(55, 164, 105, 0.06);
+  }
+}
+
+.quant-arrow {
+  color: var(--global-text-color-light);
+  font-size: 1.8rem;
+}
+
+.gpu-memory-diagram {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(248, 251, 255, 0.94), rgba(255, 255, 255, 0.75));
+}
+
+.memory-stack {
+  display: grid;
+  gap: 0.35rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.6rem;
+    border-radius: 6px;
+    color: #14233c;
+    font-weight: 700;
+  }
+
+  .weights {
+    background: #d9e0ec;
+  }
+
+  .kv {
+    min-height: 5rem;
+    background: linear-gradient(135deg, #3191f2, #78bbff);
+    color: #fff;
+  }
+
+  .activations {
+    background: #98dd91;
+  }
+
+  .temp {
+    background: #f5c979;
+  }
+
+  .runtime {
+    background: #e7ebf2;
+  }
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 0.35rem;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #1d2c44;
+
+  span {
+    min-height: 1.25rem;
+    border-radius: 4px;
+    background: #dae2ee;
+
+    &:nth-child(n + 17):nth-child(-n + 48) {
+      background: #56a7f7;
+    }
+
+    &:nth-child(n + 49):nth-child(-n + 56) {
+      background: #92dd93;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .llm-phase-grid,
+  .metric-comparison,
+  .gpu-memory-diagram {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr;
+  }
+
+  .quant-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .quant-arrow {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+}
+
 // Social (bottom)
 
 .social {
