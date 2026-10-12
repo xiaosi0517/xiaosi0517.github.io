@@ -267,7 +267,7 @@ ul.timeline li::before {
 
 .cv-modern-grid {
   display: grid;
-  grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr) minmax(0, 1.22fr);
+  grid-template-columns: minmax(130px, 0.32fr) minmax(0, 1fr) minmax(0, 1.22fr);
   gap: 1rem;
 }
 
@@ -278,11 +278,11 @@ ul.timeline li::before {
   min-height: 100%;
 
   img {
-    width: min(190px, 100%);
+    width: min(128px, 100%);
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 16px 36px rgba(7, 19, 61, 0.12);
+    box-shadow: 0 12px 28px rgba(7, 19, 61, 0.12);
   }
 }
 
