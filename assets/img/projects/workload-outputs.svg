@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" width="960" height="350" role="img">
+<title>Geometry, raster, and record</title><desc>A synthetic tile is shown as vector geometry, a raster, and a metadata record. The record fields are examples, not a captured file.</desc>
+<rect width="960" height="350" fill="#f4f8fa"/>
+<defs>
+  <marker id="go" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#2a6f97"/>
+  </marker>
+</defs>
+<text x="36" y="40" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Three views of one slice</text>
+<rect x="36" y="68" width="280" height="250" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="56" y="98" text-anchor="start" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Geometry</text>
+<rect x="62" y="118" width="40" height="40" rx="3" fill="#fff" stroke="#3d8b6e" stroke-width="1.6"/><rect x="70.8" y="126.8" width="22.4" height="8.8" fill="#3d8b6e" opacity=".85"/><rect x="77.2" y="138.8" width="9.6" height="9.6" fill="#3d8b6e" opacity=".55"/>
+<rect x="120" y="118" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="128.8" y="126.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="135.2" y="138.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="178" y="118" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="186.8" y="126.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="193.2" y="138.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="236" y="118" width="40" height="40" rx="3" fill="#fff" stroke="#3d8b6e" stroke-width="1.6"/><rect x="244.8" y="126.8" width="22.4" height="8.8" fill="#3d8b6e" opacity=".85"/><rect x="251.2" y="138.8" width="9.6" height="9.6" fill="#3d8b6e" opacity=".55"/>
+<rect x="62" y="164" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="70.8" y="172.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="77.2" y="184.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="120" y="164" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="128.8" y="172.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="135.2" y="184.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="178" y="164" width="40" height="40" rx="3" fill="#fff" stroke="#3d8b6e" stroke-width="1.6"/><rect x="186.8" y="172.8" width="22.4" height="8.8" fill="#3d8b6e" opacity=".85"/><rect x="193.2" y="184.8" width="9.6" height="9.6" fill="#3d8b6e" opacity=".55"/>
+<rect x="236" y="164" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="244.8" y="172.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="251.2" y="184.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="62" y="210" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="70.8" y="218.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="77.2" y="230.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="120" y="210" width="40" height="40" rx="3" fill="#fff" stroke="#3d8b6e" stroke-width="1.6"/><rect x="128.8" y="218.8" width="22.4" height="8.8" fill="#3d8b6e" opacity=".85"/><rect x="135.2" y="230.8" width="9.6" height="9.6" fill="#3d8b6e" opacity=".55"/>
+<rect x="178" y="210" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="186.8" y="218.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="193.2" y="230.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="236" y="210" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="244.8" y="218.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="251.2" y="230.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="62" y="256" width="40" height="40" rx="3" fill="#fff" stroke="#3d8b6e" stroke-width="1.6"/><rect x="70.8" y="264.8" width="22.4" height="8.8" fill="#3d8b6e" opacity=".85"/><rect x="77.2" y="276.8" width="9.6" height="9.6" fill="#3d8b6e" opacity=".55"/>
+<rect x="120" y="256" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="128.8" y="264.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="135.2" y="276.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="178" y="256" width="40" height="40" rx="3" fill="#fff" stroke="#2a6f97" stroke-width="1.6"/><rect x="186.8" y="264.8" width="22.4" height="8.8" fill="#2a6f97" opacity=".85"/><rect x="193.2" y="276.8" width="9.6" height="9.6" fill="#2a6f97" opacity=".55"/>
+<rect x="236" y="256" width="40" height="40" rx="3" fill="#fff" stroke="#3d8b6e" stroke-width="1.6"/><rect x="244.8" y="264.8" width="22.4" height="8.8" fill="#3d8b6e" opacity=".85"/><rect x="251.2" y="276.8" width="9.6" height="9.6" fill="#3d8b6e" opacity=".55"/>
+<rect x="340" y="68" width="280" height="250" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="360" y="98" text-anchor="start" fill="#7257b5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Raster</text>
+<rect x="366" y="122" width="228" height="160" rx="6" fill="#243038"/>
+<rect x="404" y="136" width="16" height="10" fill="#d7e4ee"/>
+<rect x="430" y="136" width="16" height="10" fill="#d7e4ee"/>
+<rect x="456" y="136" width="16" height="10" fill="#d7e4ee"/>
+<rect x="508" y="136" width="16" height="10" fill="#d7e4ee"/>
+<rect x="534" y="136" width="16" height="10" fill="#d7e4ee"/>
+<rect x="560" y="136" width="16" height="10" fill="#d7e4ee"/>
+<rect x="378" y="158" width="16" height="10" fill="#d7e4ee"/>
+<rect x="430" y="158" width="16" height="10" fill="#d7e4ee"/>
+<rect x="456" y="158" width="16" height="10" fill="#d7e4ee"/>
+<rect x="482" y="158" width="16" height="10" fill="#d7e4ee"/>
+<rect x="534" y="158" width="16" height="10" fill="#d7e4ee"/>
+<rect x="560" y="158" width="16" height="10" fill="#d7e4ee"/>
+<rect x="378" y="180" width="16" height="10" fill="#d7e4ee"/>
+<rect x="404" y="180" width="16" height="10" fill="#d7e4ee"/>
+<rect x="456" y="180" width="16" height="10" fill="#d7e4ee"/>
+<rect x="482" y="180" width="16" height="10" fill="#d7e4ee"/>
+<rect x="508" y="180" width="16" height="10" fill="#d7e4ee"/>
+<rect x="560" y="180" width="16" height="10" fill="#d7e4ee"/>
+<rect x="378" y="202" width="16" height="10" fill="#d7e4ee"/>
+<rect x="404" y="202" width="16" height="10" fill="#d7e4ee"/>
+<rect x="430" y="202" width="16" height="10" fill="#d7e4ee"/>
+<rect x="482" y="202" width="16" height="10" fill="#d7e4ee"/>
+<rect x="508" y="202" width="16" height="10" fill="#d7e4ee"/>
+<rect x="534" y="202" width="16" height="10" fill="#d7e4ee"/>
+<rect x="404" y="224" width="16" height="10" fill="#d7e4ee"/>
+<rect x="430" y="224" width="16" height="10" fill="#d7e4ee"/>
+<rect x="456" y="224" width="16" height="10" fill="#d7e4ee"/>
+<rect x="508" y="224" width="16" height="10" fill="#d7e4ee"/>
+<rect x="534" y="224" width="16" height="10" fill="#d7e4ee"/>
+<rect x="560" y="224" width="16" height="10" fill="#d7e4ee"/>
+<rect x="378" y="246" width="16" height="10" fill="#d7e4ee"/>
+<rect x="430" y="246" width="16" height="10" fill="#d7e4ee"/>
+<rect x="456" y="246" width="16" height="10" fill="#d7e4ee"/>
+<rect x="482" y="246" width="16" height="10" fill="#d7e4ee"/>
+<rect x="534" y="246" width="16" height="10" fill="#d7e4ee"/>
+<rect x="560" y="246" width="16" height="10" fill="#d7e4ee"/>
+<rect x="644" y="68" width="280" height="250" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="664" y="98" text-anchor="start" fill="#3d8b6e" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Record</text>
+<text x="664" y="138" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">slice id</text>
+<text x="664" y="160" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="400">origin and extent</text>
+<text x="664" y="196" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">layer set</text>
+<text x="664" y="218" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="400">pattern and seed</text>
+<text x="664" y="254" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700">object count</text>
+<text x="664" y="276" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="400">checked, not assumed</text></svg>

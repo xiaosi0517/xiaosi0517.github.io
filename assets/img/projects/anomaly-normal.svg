@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 228" width="660" height="228" role="img">
+<title>Normal pattern</title>
+<desc>Expected lines, a noisy observation of the same lines, and a deviation panel with nothing marked.</desc>
+<rect width="660" height="228" fill="#f4f8fa"/>
+<defs>
+  <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g" result="a">
+      <feFuncA type="linear" slope="0.45"/>
+    </feComponentTransfer>
+  </filter>
+</defs>
+<text x="16" y="26" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Expected</text>
+<rect x="16" y="36" width="190" height="132" rx="8" fill="#ffffff" stroke="#d3dee6"/>
+<text x="230" y="26" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Observed</text>
+<rect x="230" y="36" width="190" height="132" rx="8" fill="#ffffff" stroke="#d3dee6"/>
+<text x="444" y="26" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Departure</text>
+<rect x="444" y="36" width="190" height="132" rx="8" fill="#ffffff" stroke="#d3dee6"/>
+<rect x="28" y="48" width="166" height="108" rx="5" fill="#243038"/>
+<path d="M51.2 80.4H170.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M51.2 95.5H170.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M51.2 110.6H170.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M51.2 125.8H170.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="28" y="48" width="166" height="108" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="242" y="48" width="166" height="108" rx="5" fill="#243038"/>
+<path d="M265.2 80.4H384.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M265.2 95.5H384.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M265.2 110.6H384.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M265.2 125.8H384.8" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="242" y="48" width="166" height="108" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="456" y="48" width="166" height="108" rx="5" fill="#243038"/><text x="539.0" y="106.0" text-anchor="middle" fill="#8aa0b0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">no marked departure</text>
+</svg>

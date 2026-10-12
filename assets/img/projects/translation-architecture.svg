@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460" role="img">
+<title>Conditional image translation at training and inference</title>
+<desc>At inference, a layout passes through a U-Net generator once to produce a predicted observation. During training, a conditional PatchGAN also compares source-output pairs, while reconstruction and adversarial signals update the generator.</desc>
+<rect width="960" height="460" fill="#f4f8fa"/>
+
+<defs>
+  <filter id="noise" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" seed="9" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g"><feFuncA type="linear" slope=".38"/></feComponentTransfer>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.5"/></filter>
+  <marker id="arrow-blue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#2a6f97"/>
+  </marker>
+  <marker id="arrow-purple" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+    <path d="M0 0L8 4L0 8Z" fill="#7257b5"/>
+  </marker>
+</defs>
+
+<text x="36" y="38" text-anchor="start" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Inference</text>
+<text x="36" y="68" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Input layout</text><rect x="36" y="78" width="178" height="154" rx="10" fill="#fff" stroke="#d3dee6"/>
+<rect x="52" y="94" width="146" height="122" rx="6" fill="#10171d"/>
+<rect x="93.0" y="123.0" width="64" height="64" fill="none" stroke="#2a6f97" stroke-width="4"/>
+<path d="M64 137.0H93.0M64 155.0H93.0M64 173.0H93.0M157.0 137.0H186M157.0 155.0H186M157.0 173.0H186" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M107.0 104V123.0M125.0 104V123.0M143.0 104V123.0M107.0 187.0V206M125.0 187.0V206M143.0 187.0V206" stroke="#8ea8e8" stroke-width="3"/>
+<path d="M224 155H278" stroke="#2a6f97" stroke-width="3" marker-end="url(#arrow-blue)"/>
+<rect x="294" y="78" width="330" height="154" rx="12" fill="#fff" stroke="#2a6f97" stroke-width="1.5"/>
+<text x="459" y="106" text-anchor="middle" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700">U-Net generator</text>
+<rect x="320" y="132.0" width="26" height="86" rx="4" fill="#5c9bd3"/>
+<rect x="366" y="140.0" width="26" height="70" rx="4" fill="#6ba5dc"/>
+<rect x="407" y="148.0" width="26" height="54" rx="4" fill="#83b2e3"/>
+<rect x="447" y="156.0" width="26" height="38" rx="4" fill="#7257b5"/>
+<rect x="487" y="148.0" width="26" height="54" rx="4" fill="#8e79d0"/>
+<rect x="527" y="140.0" width="26" height="70" rx="4" fill="#8168c8"/>
+<rect x="568" y="132.0" width="26" height="86" rx="4" fill="#7257b5"/>
+<path d="M333 124Q457.0 92 581 124" fill="none" stroke="#8b97a0" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M379 124Q459.5 92 540 124" fill="none" stroke="#8b97a0" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M420 124Q459.5 92 499 124" fill="none" stroke="#8b97a0" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="338" y="216" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">encode</text>
+<text x="535" y="216" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">decode</text>
+<path d="M636 155H690" stroke="#2a6f97" stroke-width="3" marker-end="url(#arrow-blue)"/>
+<text x="706" y="68" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Predicted observation</text><rect x="706" y="78" width="218" height="154" rx="10" fill="#fff" stroke="#d3dee6"/>
+<rect x="722" y="94" width="186" height="122" rx="6" fill="#34393d"/>
+<g filter="url(#soft)" opacity=".86">
+<rect x="783.0" y="123.0" width="64" height="64" fill="none" stroke="#d9dde0" stroke-width="4"/>
+<path d="M734 137.0H783.0M734 155.0H783.0M734 173.0H783.0M847.0 137.0H896M847.0 155.0H896M847.0 173.0H896" stroke="#7c6ad0" stroke-width="3"/>
+<path d="M797.0 104V123.0M815.0 104V123.0M833.0 104V123.0M797.0 187.0V206M815.0 187.0V206M833.0 187.0V206" stroke="#8ea8e8" stroke-width="3"/></g>
+<rect x="722" y="94" width="186" height="122" rx="6" fill="#fff" filter="url(#noise)" opacity=".42"/>
+<text x="36" y="282" text-anchor="start" fill="#7257b5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Training only</text>
+<path d="M814 242V304H674" fill="none" stroke="#7257b5" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrow-purple)"/>
+<rect x="446" y="304" width="214" height="104" rx="12" fill="#fff" stroke="#7257b5" stroke-width="1.5"/>
+<text x="553" y="333" text-anchor="middle" fill="#7257b5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Conditional PatchGAN</text>
+<text x="553" y="357" text-anchor="middle" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">source + real/generated pair</text>
+<text x="553" y="379" text-anchor="middle" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">local real/fake map</text>
+<rect x="36" y="304" width="370" height="104" rx="12" fill="#fff" stroke="#d3dee6"/>
+<text x="54" y="333" text-anchor="start" fill="#25313a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Training objectives</text>
+<text x="54" y="357" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Reconstruction: preserve the paired structure</text>
+<text x="54" y="379" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">Adversarial: recover plausible local texture</text>
+<path d="M440 356H412" stroke="#7257b5" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+<path d="M220 304V264H344V232" fill="none" stroke="#7257b5" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#arrow-purple)"/>
+<text x="694" y="431" text-anchor="start" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="400">The discriminator is removed at inference.</text>
+</svg>

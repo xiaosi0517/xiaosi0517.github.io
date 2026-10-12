@@ -15,17 +15,17 @@ tech:
   - Search Optimization
 pipeline:
   - title: Geometric Layout
-    detail: Repeated cells, lines, and spacings define the field in which a registration target must be distinguished from its neighbors.
+    detail: Keep repetition as placed instances, so the field does not have to be copied before a window is known.
   - title: Windowed Geometry Processing
-    detail: Local windows are extracted from the layout and rasterized so geometry can be compared with image-space matching.
+    detail: Expand, clean, and rasterize only the geometry one search window needs.
   - title: Candidate Generation
-    detail: Spatial constraints propose locations inside those windows instead of treating every coordinate as equally worth testing.
+    detail: Propose locations inside spatial constraints instead of every coordinate.
   - title: Template Matching
-    detail: Normalized cross-correlation measures agreement with the template, while Sobel edge features keep the comparison focused on structural boundaries.
+    detail: Score those candidates by how their structural edges agree with the template.
   - title: Quality Evaluation & Ranking
-    detail: Candidates are ranked from several measurements, including correlation peak uniqueness. Adaptive early stopping skips the remaining work in a window once the evidence is already decisive.
+    detail: Prefer a unique, well-supported peak over the highest score.
   - title: Selected Registration Locations
-    detail: The locations that remain are the ones with a stable correspondence, not merely the strongest local score.
+    detail: Keep stable correspondences, and stop once enough of them are accepted.
 highlights:
   - Windowed geometry extraction and rasterization
   - Spatially constrained candidate search
@@ -40,15 +40,15 @@ highlights:
 
 ## The Challenge
 
-A reliable registration location is not simply a window that resembles a template. In a large geometric layout, the same cells, lines, and spacings recur across the field. A local match can look convincing and still be one of many interchangeable positions.
+A reliable registration location is not a window that merely resembles a template. In a large geometric layout, the same cells, lines, and spacings recur. A local match can look convincing and still be one of many interchangeable positions.
 
-Three effects make the search difficult:
+Three effects make a score-only, exhaustive search fail:
 
-- **Repetition** creates several plausible correspondences, often close together.
-- **Rasterization** can soften the small geometric break that made one window distinctive.
-- **Scale** makes an identical expensive test at every coordinate wasteful, while pruning too aggressively can skip the rare useful locations.
+- **Repetition** produces several plausible correspondences, often close together. The strongest local score can land on the wrong copy.
+- **Rasterization** can soften the small geometric break that made one window distinctive, so the cue that would separate the copies is easy to lose.
+- **Scale** makes the same expensive test at every coordinate wasteful, while pruning too aggressively can skip the rare locations that are actually useful.
 
-The engineering problem is to search this space selectively and then decide whether a correspondence is unique enough to trust.
+The design has to search selectively, then accept a correspondence only when it is unique enough to trust.
 
 ## Search Space Visualization
 
@@ -66,7 +66,7 @@ The engineering problem is to search this space selectively and then decide whet
 <p class="project-figure-caption">Most candidates are interchangeable. In a repetitive layout, almost every proposed location looks like its neighbors, and only one sits on geometry that does not repeat.</p>
 </div>
 
-The figure shows one tile of a much larger layout; the faded cells continue past every edge. Search is constrained to regions A, B, and C instead of scanning every coordinate. Regions A and C still yield only ambiguous candidates, because every cell inside them repeats. Region B is useful only because it happens to contain the one geometric break. A distinctive cell outside every region would never be proposed, which is why region placement is itself a design decision.
+Search is limited to regions A, B, and C because testing every coordinate does not scale. That choice has a cost: a distinctive cell outside every region is never proposed, so where the regions sit is part of the algorithm. Constraint alone is also not enough. Regions A and C still repeat, and only B contains the geometric break.
 
 ## Robust Matching
 
@@ -83,12 +83,9 @@ The figure shows one tile of a much larger layout; the faded cells continue past
 <p class="project-figure-caption">The higher maximum is the less reliable match. Both maps share one color scale. The repetitive window on the left reaches the higher peak, but its runner-up is almost as strong.</p>
 </div>
 
-A correlation map shows how well the template agrees with the window at every offset. Normalized cross-correlation answers "how similar is this position?", not "is this position the only one that is similar?".
+Normalized cross-correlation scores how well the template agrees with the window at each offset. It does not say whether that agreement is unique, which is the question repetition makes urgent.
 
-- **Left:** the window repeats, so the map is a lattice of nearly equal peaks. Peak 1 wins by a margin smaller than what noise or a slight edge change could produce, so the selected offset can jump to a neighboring copy.
-- **Right:** a geometric break leaves one dominant peak. Its absolute height is lower than the best peak on the left, yet its position is unambiguous.
-
-Peak uniqueness measures this directly. It compares the best peak with the strongest competing peak outside the best peak's immediate neighborhood. Ranking uses uniqueness together with correlation strength and Sobel edge support, so a strong but repeated response does not outrank a slightly weaker, unique one.
+Peak uniqueness compares the best peak with the strongest competitor outside its neighborhood. On the left, the winning peak is higher, but the gap is small enough that noise or a slight edge change can move the offset onto a neighboring copy. On the right, the peak is lower and the gap is decisive. Ranking uses uniqueness together with correlation strength and Sobel edge support, so a repeated high score cannot outrank a stable one. Sobel support is there because a match should be carried by structural boundaries, not by a smooth region that many cells share.
 
 ## System Architecture
 
@@ -119,7 +116,7 @@ Peak uniqueness measures this directly. It compares the best peak with the stron
 <p class="project-figure-caption">Geometry is resolved in vector space and only then converted to pixels. Work is limited to one window at a time, and topology is fixed before rasterization.</p>
 </div>
 
-The processing order matters. Hierarchical layouts compress repetition, so expanding only what a window needs keeps memory bounded. Resolving overlaps and holes with polygon operations is exact, while doing the same in pixel space is not. Rasterization then becomes a mechanical step whose only free parameter is resolution, which is the representation template matching needs. The full pipeline follows.
+That bound is what makes the later search selective. Geometry is paid for only where a region will actually be tested, so a larger field does not require a larger matcher.
 
 {% include project_pipeline.liquid %}
 
@@ -169,23 +166,46 @@ The processing order matters. Hierarchical layouts compress repetition, so expan
 <p class="project-figure-caption">Most of the search work is never performed. Bar widths and candidate counts show the shape of the reduction, not measured savings.</p>
 </div>
 
-Each reduction step saves work and carries a risk:
+Each cut in the funnel saves work only if the locations it drops were not the ones worth trusting.
 
 <div class="project-tradeoffs">
   <section>
     <h3>Search quality</h3>
-    <p>A trustworthy location needs a separated correlation peak and edge support, not only a high score. Rejecting ambiguous peaks avoids correspondences that would move under small changes in the window.</p>
+    <p>A high score on a repeated pattern can move when the window changes slightly. Rejecting peaks that are not clearly separated avoids correspondences that would not stay put.</p>
   </section>
   <section>
     <h3>Computational cost</h3>
-    <p>Extracting windows, rasterizing them, computing Sobel features, and comparing competing peaks costs more than accepting the first maximum. That cost is what makes an ambiguous high score detectable.</p>
+    <p>Comparing competing peaks and checking edge support costs more than taking the first maximum. That extra work is what makes an ambiguous high score visible.</p>
   </section>
   <section>
     <h3>Candidate coverage</h3>
-    <p>Spatial constraints and early filters narrow the funnel. If they are too strict, the uncommon neighborhood that breaks the repeat is removed before it is ever scored.</p>
+    <p>Constraints and early filters shrink the search. Drawn too tightly, they remove the uncommon neighborhood that breaks the repeat before it is scored.</p>
   </section>
   <section>
     <h3>Execution efficiency</h3>
-    <p>Adaptive stopping skips the tail of the ranked list once enough reliable locations are accepted. It is only safe because ranking puts unique peaks first and the stop rule counts only accepted candidates, not high scores.</p>
+    <p>Stopping early is safe only because unique peaks are ranked first and the stop rule counts accepted locations, not high scores. Otherwise the search can halt on a repeated maximum.</p>
+  </section>
+</div>
+
+## Engineering Outcomes
+
+These are capabilities of the design, not measured benchmark results.
+
+<div class="project-tradeoffs">
+  <section>
+    <h3>Reliable correspondence</h3>
+    <p>A selected location can hold in a repeated pattern because acceptance depends on uniqueness, not on which copy scored highest.</p>
+  </section>
+  <section>
+    <h3>Selective large-scale search</h3>
+    <p>Most of the layout is never fully compared. The expensive test is reserved for candidates that already survived a spatial and structural filter.</p>
+  </section>
+  <section>
+    <h3>Robustness from structure</h3>
+    <p>Matches stay anchored to geometry that repetition does not erase. A change in pixel resolution does not silently rewrite which shapes exist.</p>
+  </section>
+  <section>
+    <h3>An adjustable workflow</h3>
+    <p>Coverage, ranking, and stopping can be tightened or relaxed on their own. The balance between reliability and cost does not require replacing the matcher.</p>
   </section>
 </div>

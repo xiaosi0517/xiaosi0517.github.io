@@ -434,10 +434,23 @@ pre.mermaid {
 }
 
 .project-case {
+  .project-category {
+    margin: -0.35rem 0 0.25rem;
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
   .project-kicker {
     margin: -0.35rem 0 0.85rem;
     color: var(--global-theme-color);
     font-size: 0.95rem;
+  }
+
+  .project-category + .project-kicker {
+    margin-top: 0;
   }
 
   figure {
@@ -837,6 +850,70 @@ p.geometry-step-title {
       height: 0.4rem;
       border-radius: 50%;
       background: var(--global-theme-color);
+    }
+  }
+}
+
+.anomaly-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.anomaly-card {
+  p:not(.geometry-step-title) {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+  }
+
+  figure {
+    margin-bottom: 0;
+  }
+}
+
+.translation-examples {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.translation-example {
+  p:not(.geometry-step-title) {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+  }
+
+  figure {
+    margin-bottom: 0;
+  }
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.4rem 0 1.25rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.38rem 0.75rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-color: var(--global-theme-color);
+      text-decoration: none;
     }
   }
 }

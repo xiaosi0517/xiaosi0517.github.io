@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" role="img">
+<title>Parallel measurement of an image collection</title>
+<desc>Synthetic images fan out to four workers that align and measure independently, then gather into one summary. Picture review is a separate, later step.</desc>
+<rect width="960" height="440" fill="#f4f8fa"/>
+<defs>
+  <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g" result="a">
+      <feFuncA type="linear" slope="0.45"/>
+    </feComponentTransfer>
+  </filter>
+</defs>
+<rect x="40" y="56" width="132" height="84" rx="5" fill="#243038"/>
+<path d="M58.5 81.2H153.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M58.5 93.0H153.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M58.5 104.7H153.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M58.5 116.5H153.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="40" y="56" width="132" height="84" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="48" y="63" width="132" height="84" rx="5" fill="#243038"/>
+<path d="M66.5 88.2H161.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M66.5 100.0H161.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M66.5 111.7H161.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M66.5 123.5H161.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="48" y="63" width="132" height="84" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="56" y="70" width="132" height="84" rx="5" fill="#243038"/>
+<path d="M74.5 95.2H169.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M74.5 107.0H169.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M74.5 118.7H169.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M74.5 130.5H169.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="56" y="70" width="132" height="84" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="64" y="77" width="132" height="84" rx="5" fill="#243038"/>
+<path d="M82.5 102.2H177.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M82.5 114.0H177.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M82.5 125.7H177.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M82.5 137.5H177.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="64" y="77" width="132" height="84" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<text x="40" y="196" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15">Image collection</text>
+<rect x="250" y="48" width="150" height="132" rx="10" fill="#ffffff" stroke="#d3dee6"/>
+<text x="325" y="74" text-anchor="middle" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Worker 1</text>
+<rect x="291" y="86" width="68" height="52" rx="5" fill="#243038"/>
+<path d="M300.5 101.6H349.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M300.5 108.9H349.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M300.5 116.2H349.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M300.5 123.4H349.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="291" y="86" width="68" height="52" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<path d="M196 110 V28 H835 V48 M325 28 V48 M495 28 V48 M665 28 V48" fill="none" stroke="#2a6f97" stroke-width="1.5" opacity="0.7"/>
+<rect x="420" y="48" width="150" height="132" rx="10" fill="#ffffff" stroke="#d3dee6"/>
+<text x="495" y="74" text-anchor="middle" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Worker 2</text>
+<rect x="461" y="86" width="68" height="52" rx="5" fill="#243038"/>
+<path d="M470.5 101.6H519.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M470.5 108.9H519.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M470.5 116.2H519.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M470.5 123.4H519.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="461" y="86" width="68" height="52" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="590" y="48" width="150" height="132" rx="10" fill="#ffffff" stroke="#d3dee6"/>
+<text x="665" y="74" text-anchor="middle" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Worker 3</text>
+<rect x="631" y="86" width="68" height="52" rx="5" fill="#243038"/>
+<path d="M640.5 101.6H689.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M640.5 108.9H689.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M640.5 116.2H689.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M640.5 123.4H689.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="631" y="86" width="68" height="52" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="650.0" y="103.7" width="29.9" height="14.6" rx="2" fill="#f4f7f8"/>
+<rect x="760" y="48" width="150" height="132" rx="10" fill="#ffffff" stroke="#d3dee6"/>
+<text x="835" y="74" text-anchor="middle" fill="#2a6f97" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Worker 4</text>
+<rect x="801" y="86" width="68" height="52" rx="5" fill="#243038"/>
+<path d="M810.5 101.6H859.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M810.5 108.9H859.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M810.5 116.2H859.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M810.5 123.4H859.5" fill="none" stroke="#c5ced6" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="801" y="86" width="68" height="52" rx="5" fill="#ffffff" filter="url(#grain)" opacity="0.28"/>
+<rect x="250" y="248" width="650" height="86" rx="12" fill="#ffffff" stroke="#2a6f97"/>
+<text x="274" y="284" fill="#243038" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="600">Aggregated measurements</text>
+<text x="274" y="308" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15">The collection is summarized only after each image has been measured.</text>
+<rect x="40" y="248" width="180" height="86" rx="12" fill="#ffffff" stroke="#d3dee6"/>
+<text x="56" y="282" fill="#243038" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">Review later</text>
+<text x="56" y="306" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">Open an image to</text>
+<text x="56" y="324" fill="#5d6b76" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">explain a flag.</text>
+<path d="M325 180 V248" fill="none" stroke="#2a6f97" stroke-width="1.5" opacity="0.65"/>
+<path d="M495 180 V248" fill="none" stroke="#2a6f97" stroke-width="1.5" opacity="0.65"/>
+<path d="M665 180 V248" fill="none" stroke="#2a6f97" stroke-width="1.5" opacity="0.65"/>
+<path d="M835 180 V248" fill="none" stroke="#2a6f97" stroke-width="1.5" opacity="0.65"/>
+</svg>
