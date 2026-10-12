@@ -226,17 +226,18 @@ body.sticky-bottom-footer {
 
 .about-identity {
   display: flex;
-  gap: 1.15rem;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 1.35rem;
 }
 
 .about-profile-photo {
-  width: 5.4rem;
-  height: 5.4rem;
-  flex: 0 0 5.4rem;
+  width: 5.8rem;
+  height: 5.8rem;
+  flex: 0 0 5.8rem;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 42%;
   box-shadow: 0 12px 26px rgba(7, 19, 61, 0.13);
 }
 

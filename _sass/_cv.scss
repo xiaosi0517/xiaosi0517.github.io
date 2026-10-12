@@ -267,23 +267,35 @@ ul.timeline li::before {
 
 .cv-modern-grid {
   display: grid;
-  grid-template-columns: minmax(130px, 0.32fr) minmax(0, 1fr) minmax(0, 1.22fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 1.1rem;
+  align-items: stretch;
+}
+
+.cv-profile-contact-card {
+  display: grid;
+  grid-template-columns: 8.4rem minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
 }
 
 .cv-photo-panel {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  min-height: 100%;
+  padding-top: 0.15rem;
 
   img {
-    width: min(128px, 100%);
+    width: 7.25rem;
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 12px 28px rgba(7, 19, 61, 0.12);
   }
+}
+
+.cv-contact-content {
+  min-width: 0;
 }
 
 .cv-card {
@@ -609,6 +621,14 @@ ul.timeline li::before {
     grid-template-columns: 1fr;
   }
 
+  .cv-profile-contact-card {
+    grid-template-columns: 7.4rem minmax(0, 1fr);
+  }
+
+  .cv-photo-panel img {
+    width: 6.5rem;
+  }
+
   .cv-timeline::before {
     left: 0.5rem;
   }
@@ -635,6 +655,14 @@ ul.timeline li::before {
   .cv-contact-list div {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  .cv-profile-contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-photo-panel {
+    justify-content: flex-start;
   }
 
   .cv-modern-header h1 {
